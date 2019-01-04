@@ -338,23 +338,25 @@
 				<p><span class="glyphicon glyphicon-phone"></span>Phone: Sample</p>
 				<p><span class="glyphicon glyphicon-envelope"></span>Email: ieeesciitmandi@students.iitmandi.ac.in</p>
 			</div>
-			<div class="col-md-7" style="transform: translate(10px,0px);">
-				<div class="row">
-					<div class="col-sm-6 form-group">
-						<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+			<form action="mail.php" method="POST">
+				<div class="col-md-7" style="transform: translate(10px,0px);">
+					<div class="row">
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+						</div>
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+						</div>
 					</div>
-					<div class="col-sm-6 form-group">
-						<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+					<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+					<br>
+					<div class="row">
+						<div class="col-md-12 form-group">
+							<input class="btn pull-right" type="submit" value="Send">
+						</div>
 					</div>
 				</div>
-				<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-				<br>
-				<div class="row">
-					<div class="col-md-12 form-group">
-						<button class="btn pull-right" type="submit">Send</button>
-					</div>
-				</div>
-			</div>
+			</form>
 		</div>
 	</div>
 	</div>
