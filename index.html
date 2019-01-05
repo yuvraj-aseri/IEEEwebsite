@@ -23,7 +23,7 @@
     color: #777;
   }
   
-  .fa {
+  #members .fa {
   color: #404040;
   font-size: 20px;
   width: 20px;
@@ -33,21 +33,20 @@
   transform: translate(30px,0px);
   }
 
-  .fa-facebook-official:hover {
+  #members .fa-facebook-official:hover {
   	font-size: 21px;
     opacity: 0.7;
     color: #0000de;
   }
 
-  .fa-github:hover {
+  #members .fa-github:hover {
   	font-size: 21px;
     opacity: 0.7;
     color: #595959;
   }
 
   h1 { 
-  	font-family: montserrat;
-    letter-spacing: 1px;      
+  	font-family: montserrat;     
     color: #111;
   }
 
@@ -61,6 +60,12 @@
 	-ms-transform: translate(-10px, -15px); /* IE 9 */
 	-webkit-transform: translate(-10px, -15px); /* Safari */
 	transform: translate(-10px, -15px);
+  }
+
+  #events{
+  	background: url("img/hi.png") fixed;
+  	background-repeat: no-repeat;
+  	background-position: center;
   }
 
   #members{
@@ -95,9 +100,7 @@
    .navbar{
    	font-family: montserrat;
    	border-radius: 0;
-	height: 60px;
    	opacity: 0.9;
-   	letter-spacing: 2px;
    }
 
    .navbar li a{
@@ -177,7 +180,7 @@
 					<span class="icon-bar"></span>                        
 				</button>
 				<a class="navbar-brand" href="#myPage">
-					<img src="img/ieee_iitmanditemp.jpg" alt="Logo" style="height: 40px" id="logo">
+					<img src="img/ieee_iitmanditemp.jpg" alt="Logo" style="height: 40px; transform: translate(0px,-10px);" id="logo">
 				</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
@@ -264,11 +267,11 @@
 	</div>
 	</div>
 	<!--ABOUT US ENDS-->
-
+	<br>
 	<!--EVENTS START-->
 	<div id="events">
 	<div id="services" class="container text-center">
-		<br>
+
 		<div id="band" class="text-center">
 			<br>
 			<h1>Events</h1>
@@ -320,16 +323,16 @@
 					<p style="text-align: left;">The Industry Applications Society, as a transnational organization, is interested in advancement of the theory and practice of electrical and electronic engineering in the development, design, manufacture and application of electrical systems, apparatus, devices and controls to the processes and equipment of industry and commerce; promotion of safe, reliable and economic installations and the professional development of its membership.</p>
 				</div>
 		</div>
-		<hr style="width: 100%">
+		<hr style="width: 100%; opacity: .3; ">
 		<div class="row slideanim">
 				<div class="col-sm-6">
-						<img src="img/RAS.png" style="width: 50%;" >
+						<img src="img/RAS.png" style="width: 50%; transform: translate(0px,20px);" >
 				</div>
 				<div class="col-sm-6">
 					<p style="text-align: left;">The IEEE Robotics and Automation Society's objectives are scientific, literary and educational in character. The Society strives for the advancement of the theory and practice of robotics and automation engineering and science and of the allied arts and sciences, and for the maintenance of high professional standards among its members, all in consonance with the Constitution and Bylaws of the IEEE and with special attention to such aims within the Field of Interest of the Society.</p>
 				</div>
 		</div>
-		<hr style="width: 100%">
+		<hr style="width: 100%; opacity: .3;">
 		<div class="row slideanim">
 				<div class="col-sm-6">
 						<img src="img/IES.gif" style="width: 50%;">
@@ -348,7 +351,7 @@
 			<h1>Members</h1>
 			<hr style="width: 9%">
 		</div>
-		<br><br>
+		<br>
 		<div class="row" id="members">
 			<div class="col-sm-4">
 				<img src="img/Utkarsh.png" class="img-circle img-responsive person" style="width:50%">
