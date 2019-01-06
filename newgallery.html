@@ -15,6 +15,9 @@
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
 </head>
 <body data-spy="scroll" data-target=".nav" data-offset="50">
 
@@ -67,7 +70,7 @@
 
 	.nav-stacked a:hover{
 		background-color: pink !important;
-		-webkit-animation-name: example; 
+		-webkit-animation-name: example;
 		-webkit-animation-duration: .8s;
 		animation-name: example;
 		animation-duration: .8s;
@@ -89,8 +92,9 @@
 	}
 
 </style>
+
 <!-- NAVBAR STARTS-->
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -133,6 +137,7 @@
 		</div>
 	</div>
 	<!--LEFT SIDE ENDS-->
+  <div class="tz-gallery">
 
 	<!--RIGHT SIDE STARTS-->
 	<div class = "col-lg-8" >
@@ -225,7 +230,11 @@
 		</div>
 	</div>
 </div>
+</div>
 <!--RIGHT SIDE ENDS-->
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
 </body>
 </html>
