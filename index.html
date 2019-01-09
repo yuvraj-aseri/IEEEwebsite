@@ -61,10 +61,9 @@
     color: #4267b2;
   }
 
-  #members .fa-github:hover {
+  #members .fa-linkedin-square:hover {
   	font-size: 21px;
-    opacity: 0.7;
-    color: #595959;
+    color: #4875B4;
   }
 
   h1 {
@@ -273,7 +272,7 @@
 </style>
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="myPage">
 
 	<!-- NAVBAR STARTS-->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -302,7 +301,7 @@
 	</nav>
 	<!-- NAVBAR ENDS -->
 
-	<a href="#myCarousel" style="position: fixed; bottom: 20px; right: 30px;">
+	<a href="#myPage" style="position: fixed; bottom: 20px; right: 30px;">
 			<span class="glyphicon glyphicon-chevron-up" style="font-size: 25px;" title="Top"></span>
 	</a>
 
@@ -465,7 +464,7 @@
 					<b> Utkarsh Jain </b>
 					<br>
 					<a href="https://www.facebook.com/utkarsh.jain.376" target="_blank"><i class="fa fa-facebook-official"></i></a>
-					<a href="https://github.com/the-utkarshjain" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/utkarsh-jain-3a71a6154/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
 					<br>
 				</div>
 			</div>
@@ -476,7 +475,7 @@
 					<b> Neeraj Sharma </b>
 					<br>
 					<a href="https://www.facebook.com/profile.php?id=100009505387539" target="_blank"><i class="fa fa-facebook-official"></i></a>
-					<a href="https://github.com/99neeraj-sharma" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/neeraj-sharma-93895a14a/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
 				</div>
 			</div>
 
@@ -486,7 +485,7 @@
 					<b> Jhalak Choudhary </b>
 					<br>
 					<a href="https://www.facebook.com/jhalak.choudhary.92" target="_blank"><i class="fa fa-facebook-official"></i></a>
-					<a href="https://github.com/Jhalak46" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/jhalak-choudhary-75921716b/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
 				</div>
 			</div>
 		</div>
@@ -592,7 +591,7 @@
 	<script>
 		$(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  $(".navbar a, a[href='#myPage']").on('click', function(event) {
 	// Make sure this.hash has a value before overriding default behavior
 	if (this.hash !== "") {
 	  // Prevent default anchor click behavior
