@@ -230,7 +230,7 @@
 
 	#gallery{
 		text-align: center;
-		/*background-color: #ffba8c;*/
+		background-color: #ffba8c;
 	}
 
 	.carousel-control.left, .carousel-control.right {
@@ -252,6 +252,18 @@
 		padding-left: 30px;
 		padding-top: 10px;
 	}
+	.nospace {
+   font-size: 0;
+	}
+	.bg-dark {
+    background-color: #444;
+    color: #fff;
+	}
+	aside {
+    padding: 30px 0;
+	}
+	
+
 </style>
 
 </head>
@@ -267,7 +279,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#myPage">
-					<img src="img/logo2.png" alt="Logo" style="height: 40px; transform: translate(0px,-10px);" id="logo">
+					<img src="img/ieee_iitmanditemp.jpg" alt="Logo" style="height: 40px; transform: translate(0px,-10px);" id="logo">
 				</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
@@ -418,7 +430,7 @@
 							<img src="img/Utkarsh.png" class="img-circle person" width="50%">
 							<p><strong> Utkarsh Jain </strong></p>
 							<br>
-							<div id="memberslink"
+							<div id="memberslink">
 							<a href="https://www.facebook.com/utkarsh.jain.376" target="_blank"><i class="fa fa-facebook-official"></i></a>
 							<a href="https://www.linkedin.com/in/utkarsh-jain-3a71a6154/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
 						</div>
@@ -429,7 +441,7 @@
 						<img src="img/Neeraj.png" class="img-circle person" width="50%">
 						<p><strong> Neeraj Sharma </strong></p>
 						<br>
-						<div id="memberslink"
+						<div id="memberslink">
 						<a href="https://www.facebook.com/profile.php?id=100009505387539" target="_blank"><i class="fa fa-facebook-official"></i></a>
 						<a href="https://www.linkedin.com/in/neeraj-sharma-93895a14a/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
 					</div>
@@ -440,7 +452,7 @@
 					<img src="img/Jhalak.png" class="img-circle person" width="50%">
 					<p><strong> Jhalak Choudhary </strong></p>
 					<br>
-					<div id="memberslink"
+					<div id="memberslink">
 					<a href="https://www.facebook.com/jhalak.choudhary.92" target="_blank"><i class="fa fa-facebook-official"></i></a>
 					<a href="https://www.linkedin.com/in/jhalak-choudhary-75921716b/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
 					<br>
@@ -451,17 +463,17 @@
 	<br><br>
 	<!--MEMBERS END-->
 
-	<!--GALLERY START-->
+	<!--GALLERY START--><aside class="bg-dark">
 	<div id="gallery">
 		<br>
 		<div class="container-fluid">
 			<h1>Gallery</h1>
-			<hr style="width: 5%">
+			<hr style="width: 10%">
 			<br>
 			<!--The main div for carousel-->
 			<div class="container text-center" style="transform: translate(0px,-10px); ">
 				<div class="carousel slide row" data-ride="carousel" data-type="multi" data-interval="2000" id="fruitscarousel">
-
+					<div class="nospace">
 					<div class="carousel-inner">
 						<div class="item active">
 							<div class="col-md-3 col-sm-12 col-xs-12"><a href="img/27th March_Prof. PC Deshmukh Talk/thumbnail (6).jpg"><img src="img/27th March_Prof. PC Deshmukh Talk/thumbnail (6).jpg" class="img-responsive"></a></div>
@@ -481,7 +493,7 @@
 						<div class="item">
 							<div class="col-md-3 col-sm-12 col-xs-12"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08057.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08057.JPG" class="img-responsive"></a></div>
 						</div>
-
+					</div>
 					</div>
 
 					<a class="left carousel-control" href="#fruitscarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
@@ -489,18 +501,18 @@
 
 				</div>
 			</div>
-			<br>
-			<a href="newgallery.html" style="font-size: 20px; font-family: montserrat; text-decoration: none;">More..</a>
+			<br>  <a href="newgallery.html" class="page-scroll btn btn-default btn-xl sr-button">More..</a>
+			<!-- <a href="newgallery.html" style="font-size: 20px; font-family: montserrat; text-decoration: none;">More..</a> -->
 			<br><br>
 		</div>
 	</div>
+</aside>
 	<!--GALLERY END-->
 
 	<!--CONTACT US START-->
 	<div id="contact_us">
 		<div id="contact" class="container" style="padding: 30px 120px;">
 			<div id="band" class="text-center">
-
 				<h1>Contact Us</h1>
 				<hr style="width: 10%">
 				<i> Thanks for passing by! </i>
