@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+</head>
+<body data-spy="scroll" data-target=".nav" data-offset="50">
+
+	<style>
+	html {
+		scroll-behavior: smooth;
+	}
+
+	h1{
+		font-family: Roboto;
+		letter-spacing: 1px;
+		color: #111;
+	}
+
+	ul{
+		font-family: montserrat;
+	}
+
+	h2, h3, h4{
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	.navbar{
+		font-family: montserrat;
+		border-radius: 0;
+		opacity: 1;
+	}
+
+	.navbar li a{
+		color: #d5d5d5 !important;
+		font-size: 15px;
+	}
+
+	.navbar-nav li a:hover {
+		color: white !important;
+	}
+
+	.navbar-nav li.active a {
+		color: #fff !important;
+		background-color: #29292c !important;
+	}
+
+	.nav-stacked a{
+		line-height: 4px;
+	}
+
+	.nav-stacked a:hover{
+		background-color: pink !important;
+		-webkit-animation-name: example;
+		-webkit-animation-duration: .8s;
+		animation-name: example;
+		animation-duration: .8s;
+	}
+
+	@-webkit-keyframes example {
+		from {background-color: white;}
+		to {background-color: pink;}
+	}
+
+	/* Standard syntax */
+	@keyframes example {
+		from {background-color: white;}
+		to {background-color: pink;}
+	}
+
+	#block{
+		margin: 15px 0px;
+	}
+	@media screen and (max-width: 3000px){
+		.container{
+			transform: translate(-450px, 0px)
+		}
+		.container h3{
+			transform: translate(-510px, 0px);
+		}
+		.nav{
+			font-size: 15px;
+			text-align: center;
+		}
+	}
+	@media screen and (max-width: 1400px){
+		.container{
+			transform: translate(-450px, 0px)
+		}
+		.container h3{
+			transform: translate(-510px, 0px);
+		}
+		.nav{
+			font-size: 15px;
+			text-align: center;
+		}
+	}
+	@media screen and (max-width: 1120px){
+		.container{
+			transform: translate(-40%, 0)
+		}
+		.container h3{
+			transform: translate(-45%, 0);
+		}
+		.nav{
+			font-size: 15px;
+			text-align: center;
+		}
+	}
+	@media screen and (max-width: 750px){
+		.container{
+			transform: translate(-300px, 0px)
+		}
+		.container h3{
+			transform: translate(-0px, 0px);
+		}
+		.nav{
+			font-size: 15px;
+			text-align: center;
+		}
+	}
+	@media screen and (max-width: 700px){
+		.container{
+			transform: translate(-40px, 0px)
+		}
+		.nav{
+			font-size: 8px;
+			text-align: center;
+		}
+	}
+	@media screen and (max-width: 600px){
+		.container{
+			transform: translate(-40px, 0px)
+		}
+		.container h3{
+			font-size: 20px;
+		}
+		.nav{
+			font-size: 5px;
+			text-align: center;
+		}
+	}
+</style>
+
+<!-- NAVBAR STARTS-->
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#myPage">
+				<img src="img/ieee_iitmanditemp.jpg" alt="Logo" style="height: 40px; transform: translate(0px,-10px);" id="logo">
+			</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+				<!-- <li><a class="page-scroll" href="index.html#about_us">About</a></li>
+				<li><a href="index.html#events">Events</a></li>
+				<li><a href="index.html#members_here">Executive Council</a></li>
+				<li><a href="index.html#gallery">Gallery</a></li>
+				<li><a href="index.html#contact_us">Contact</a></li> -->
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- NAVBAR ENDS -->
+
+<div class="container-fluid">
+
+	<!--LEFT SIDE STARTS-->
+	<div class = "col-lg-4 col-sm-4 col-xs-4" style="text-align: right;">
+		<br><br>
+		<div class="container">
+			<h3 style="letter-spacing: 2px; font-family: roboto;"><strong>GALLERY</strong></h3><hr>
+			<br>
+			<ul class="nav nav-pills nav-stacked">
+				<li><a href="#talk">Lectures and Talks</a></li>
+				<li><a href="#trip">Trips and Visits</a></li>
+				<li><a href="#agm">AGM Meetings</a></li>
+				<li><a href="#pes">PES Day</a></li>
+				<li><a href="#event">Events</a></li>
+				<li><a href="#awards">Awards and Achievements</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--LEFT SIDE ENDS-->
+  <div class="tz-gallery">
+
+	<!--RIGHT SIDE STARTS-->
+	<div class = "col-lg-8 col-sm-8 col-xs-8" style="transform: translate(-20px,0px);">
+		<div id="talk">
+			<div class="row">
+				<h3>Talk by Prof. PC Deshmukh</h3>
+				<hr>
+
+				<div id="block" class="col-sm-4"><a href="img/27th March_Prof. PC Deshmukh Talk/IMG_20180327_160621.jpg"><img src="img/27th March_Prof. PC Deshmukh Talk/IMG_20180327_160621.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/27th March_Prof. PC Deshmukh Talk/IMG_20180327_160658.jpg"><img src="img/27th March_Prof. PC Deshmukh Talk/IMG_20180327_160658.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/27th March_Prof. PC Deshmukh Talk/IMG_20180327_161850.jpg"><img src="img/27th March_Prof. PC Deshmukh Talk/IMG_20180327_161850.jpg" class="img-responsive"></a></div>
+
+				<div id="block" class="col-sm-4"><a href="img/27th March_Prof. PC Deshmukh Talk/IMG_20180327_161855.jpg"><img src="img/27th March_Prof. PC Deshmukh Talk/IMG_20180327_161855.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/27th March_Prof. PC Deshmukh Talk/IMG_20180327_161900.jpg"><img src="img/27th March_Prof. PC Deshmukh Talk/IMG_20180327_161900.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/27th March_Prof. PC Deshmukh Talk/IMG_20180327_161903.jpg"><img src="img/27th March_Prof. PC Deshmukh Talk/IMG_20180327_161903.jpg" class="img-responsive"></a></div><br>
+
+				<div id="block" class="col-sm-4"><a href="img/27th March_Prof. PC Deshmukh Talk/thumbnail (1).jpg"><img src="img/27th March_Prof. PC Deshmukh Talk/thumbnail (1).jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/27th March_Prof. PC Deshmukh Talk/thumbnail (3).jpg"><img src="img/27th March_Prof. PC Deshmukh Talk/thumbnail (3).jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/27th March_Prof. PC Deshmukh Talk/thumbnail (4).jpg"><img src="img/27th March_Prof. PC Deshmukh Talk/thumbnail (4).jpg" class="img-responsive"></a></div><br>
+
+				<div id="block" class="col-sm-4"><a href="img/27th March_Prof. PC Deshmukh Talk/thumbnail (6).jpg"><img src="img/27th March_Prof. PC Deshmukh Talk/thumbnail (6).jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/27th March_Prof. PC Deshmukh Talk/thumbnail (7).jpg"><img src="img/27th March_Prof. PC Deshmukh Talk/thumbnail (7).jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/27th March_Prof. PC Deshmukh Talk/thumbnail.jpg"><img src="img/27th March_Prof. PC Deshmukh Talk/thumbnail.jpg" class="img-responsive"></a></div>
+			</div>
+
+			<div class="row">
+				<h3>Talk by Prof. Raghava</h3>
+				<hr>
+
+				<div id="block" class="col-sm-4"><a href="img/30th March_Prof Raghava/IMG_20180330_121411.jpg"><img src="img/30th March_Prof Raghava/IMG_20180330_121411.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/30th March_Prof Raghava/IMG_20180330_121414.jpg"><img src="img/30th March_Prof Raghava/IMG_20180330_121414.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/30th March_Prof Raghava/IMG_20180330_121547.jpg"><img src="img/30th March_Prof Raghava/IMG_20180330_121547.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/30th March_Prof Raghava/IMG_20180330_121640.jpg"><img src="img/30th March_Prof Raghava/IMG_20180330_121640.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/30th March_Prof Raghava/IMG_20180330_122122.jpg"><img src="img/30th March_Prof Raghava/IMG_20180330_122122.jpg" class="img-responsive"></a></div>
+			</div>
+		</div>
+
+		<div id="trip">
+			<div class="row">
+				<h3>Palampur College Trip</h3>
+				<hr>
+
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08007.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08007.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08009.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08009.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08015.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08015.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08018.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08018.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08020.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08020.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08021.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08021.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08023.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08023.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08028.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08028.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08030.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08030.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08031.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08031.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08032.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08032.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08040.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08040.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08041.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08041.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08043.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08043.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08046.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08046.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08051.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08051.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08052.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08052.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08056.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08056.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08057.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08057.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08062.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08062.JPG" class="img-responsive"></a></div>
+			</div>
+
+			<div class="row">
+				<h3>Experts Visit to Bassi Power Station</h3>
+				<hr>
+
+				<div id="block" class="col-sm-4"><a href="img/IEEE experts visit to Bassi Power Station/DSC07005.JPG"><img src="img/IEEE experts visit to Bassi Power Station/DSC07005.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/IEEE experts visit to Bassi Power Station/DSC07007.JPG"><img src="img/IEEE experts visit to Bassi Power Station/DSC07007.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/IEEE experts visit to Bassi Power Station/DSC07028.JPG"><img src="img/IEEE experts visit to Bassi Power Station/DSC07028.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/IEEE experts visit to Bassi Power Station/DSC07046.JPG"><img src="img/IEEE experts visit to Bassi Power Station/DSC07046.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/IEEE experts visit to Bassi Power Station/DSC07064.JPG"><img src="img/IEEE experts visit to Bassi Power Station/DSC07064.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/IEEE experts visit to Bassi Power Station/DSC07065.JPG"><img src="img/IEEE experts visit to Bassi Power Station/DSC07065.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/IEEE experts visit to Bassi Power Station/DSC07066.JPG"><img src="img/IEEE experts visit to Bassi Power Station/DSC07066.JPG" class="img-responsive"></a></div>
+			</div>
+
+			<div class="row">
+				<h3>Power Station Trip</h3>
+				<hr>
+
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_095725.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_095725.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_100114.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_100114.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_100118.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_100118.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_100145.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_100145.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_100700.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_100700.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_100705.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_100705.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_100715.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_100715.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_100717.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_100717.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_100727.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_100727.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_101849.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_101849.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_103021.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_103021.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_104024.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_104024.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_104028.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_104028.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_104030.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_104030.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_104043.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_104043.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_104058.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_104058.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_104538.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_104538.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_104541.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_104541.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_104543.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_104543.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_104544.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_104544.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_104548.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_104548.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_104551.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_104551.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_104915.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_104915.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_111307.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_111307.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_111309.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_111309.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_124846.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_124846.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_124909.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_124909.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_124919.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_124919.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/Power Station Trip 2016/IMG_20160402_124942.jpg"><img src="img/Power Station Trip 2016/IMG_20160402_124942.jpg" class="img-responsive"></a></div>
+			</div>
+		</div>
+
+		<div id="agm">
+			<div class="row">
+				<h3 id="agm">AGM Meeting</h3>
+				<hr>
+
+				<div id="block" class="col-sm-4"><a href="img/AGM Meeting Delhi Section 2017/27545098_1587873524628061_1390092134909858667_n.jpg"><img src="img/AGM Meeting Delhi Section 2017/27545098_1587873524628061_1390092134909858667_n.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/AGM Meeting Delhi Section 2017/27545158_1587874477961299_3693469874250111493_n.jpg"><img src="img/AGM Meeting Delhi Section 2017/27545158_1587874477961299_3693469874250111493_n.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/AGM Meeting Delhi Section 2017/27545161_1587873021294778_8394929731346252594_n.jpg"><img src="img/AGM Meeting Delhi Section 2017/27545161_1587873021294778_8394929731346252594_n.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/AGM Meeting Delhi Section 2017/IMG-3.jpg"><img src="img/AGM Meeting Delhi Section 2017/IMG-3.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/AGM Meeting Delhi Section 2017/IMG-56.jpg"><img src="img/AGM Meeting Delhi Section 2017/IMG-56.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/AGM Meeting Delhi Section 2017/IMG-63.jpg"><img src="img/AGM Meeting Delhi Section 2017/IMG-63.jpg" class="img-responsive"></a></div>
+			</div>
+		</div>
+
+		<div id="pes">
+			<div class="row">
+				<h3>PES Day</h3>
+				<hr>
+
+				<div id="block" class="col-sm-4"><a href="img/PES Day/IMG-20180420-WA0012.jpg"><img src="img/PES Day/IMG-20180420-WA0012.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES Day/IMG-20180420-WA0020.jpg"><img src="img/PES Day/IMG-20180420-WA0020.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES Day/IMG-20180420-WA0021.jpg"><img src="img/PES Day/IMG-20180420-WA0021.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES Day/IMG-20180420-WA0032.jpg"><img src="img/PES Day/IMG-20180420-WA0032.jpg" class="img-responsive"></a></div>
+			</div>
+		</div>
+
+		<div id="event">
+			<div class="row">
+				<h3>PES Event</h3>
+				<hr>
+
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/DSC05724.JPG"><img src="img/PES 2016 events/DSC05724.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/DSC05732.JPG"><img src="img/PES 2016 events/DSC05732.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/DSC05735.JPG"><img src="img/PES 2016 events/DSC05735.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/DSC05748.JPG"><img src="img/PES 2016 events/DSC05748.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/DSC05750.JPG"><img src="img/PES 2016 events/DSC05750.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/DSC05760.JPG"><img src="img/PES 2016 events/DSC05760.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/DSC05773.JPG"><img src="img/PES 2016 events/DSC05773.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/DSC05787.JPG"><img src="img/PES 2016 events/DSC05787.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/DSC05790.JPG"><img src="img/PES 2016 events/DSC05790.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/DSC05810.JPG"><img src="img/PES 2016 events/DSC05810.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/DSC05827.JPG"><img src="img/PES 2016 events/DSC05827.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/DSC05848.JPG"><img src="img/PES 2016 events/DSC05848.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/IMG_20160618_154318.jpg"><img src="img/PES 2016 events/IMG_20160618_154318.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/IMG_20160618_154324.jpg"><img src="img/PES 2016 events/IMG_20160618_154324.jpg" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES 2016 events/IMG_20160618_174659.jpg"><img src="img/PES 2016 events/IMG_20160618_174659.jpg" class="img-responsive"></a></div>
+			</div>
+
+			<div class="row">
+				<h3>PES IAS Event</h3>
+				<hr>
+
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07076.JPG"><img src="img/PES IAS Events 2016/DSC07076.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07083.JPG"><img src="img/PES IAS Events 2016/DSC07083.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07106.JPG"><img src="img/PES IAS Events 2016/DSC07106.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07109.JPG"><img src="img/PES IAS Events 2016/DSC07109.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07113.JPG"><img src="img/PES IAS Events 2016/DSC07113.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07135.JPG"><img src="img/PES IAS Events 2016/DSC07135.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07145.JPG"><img src="img/PES IAS Events 2016/DSC07145.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07150.JPG"><img src="img/PES IAS Events 2016/DSC07150.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07183.JPG"><img src="img/PES IAS Events 2016/DSC07183.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07212.JPG"><img src="img/PES IAS Events 2016/DSC07212.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07219.JPG"><img src="img/PES IAS Events 2016/DSC07219.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07239.JPG"><img src="img/PES IAS Events 2016/DSC07239.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07252.JPG"><img src="img/PES IAS Events 2016/DSC07252.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07256.JPG"><img src="img/PES IAS Events 2016/DSC07256.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07259.JPG"><img src="img/PES IAS Events 2016/DSC07259.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07261.JPG"><img src="img/PES IAS Events 2016/DSC07261.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07266.JPG"><img src="img/PES IAS Events 2016/DSC07266.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07273.JPG"><img src="img/PES IAS Events 2016/DSC07273.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07279.JPG"><img src="img/PES IAS Events 2016/DSC07279.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07281.JPG"><img src="img/PES IAS Events 2016/DSC07281.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07285.JPG"><img src="img/PES IAS Events 2016/DSC07285.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07288.JPG"><img src="img/PES IAS Events 2016/DSC07288.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07289.JPG"><img src="img/PES IAS Events 2016/DSC07289.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/PES IAS Events 2016/DSC07294.JPG"><img src="img/PES IAS Events 2016/DSC07294.JPG" class="img-responsive"></a></div>
+			</div>
+
+		</div>
+
+		<div id="awards">
+			<div class="row">
+				<h3>IAS Award 2018</h3>
+				<hr>
+
+				<div id="block" class="col-sm-4"><a href="img/IAS Award 2018/IAS pics/DSC08086.JPG"><img src="img/IAS Award 2018/IAS pics/DSC08086.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/IAS Award 2018/IAS pics/DSC08111.JPG"><img src="img/IAS Award 2018/IAS pics/DSC08111.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/IAS Award 2018/IAS pics/DSC08113.JPG"><img src="img/IAS Award 2018/IAS pics/DSC08113.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/IAS Award 2018/IAS pics/DSC08117.JPG"><img src="img/IAS Award 2018/IAS pics/DSC08117.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/IAS Award 2018/Outstanding Chapter Chair Award 2018/DSC08090.JPG"><img src="img/IAS Award 2018/Outstanding Chapter Chair Award 2018/DSC08090.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/IAS Award 2018/Outstanding Chapter Chair Award 2018/DSC08091.JPG"><img src="img/IAS Award 2018/Outstanding Chapter Chair Award 2018/DSC08091.JPG" class="img-responsive"></a></div>
+				<div id="block" class="col-sm-4"><a href="img/IAS Award 2018/Outstanding Chapter Chair Award 2018/DSC08101.JPG"><img src="img/IAS Award 2018/Outstanding Chapter Chair Award 2018/DSC08101.JPG" class="img-responsive"></a></div>
+			</div>
+		</div>
+
+	</div>
+</div>
+</div>
+<!--RIGHT SIDE ENDS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>
