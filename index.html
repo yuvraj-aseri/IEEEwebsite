@@ -13,6 +13,66 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="paper-full.js"></script>
+
+    <script type="text/paperscript" canvas="canvas">
+        var width, height, center;
+        var points = 10;
+        var smooth = true;
+        var path = new Path({
+            fillColor: 'black'
+        });
+        var mousePos = view.center / 2;
+        var pathHeight = mousePos.y;
+        initializePath();
+
+        function initializePath() {
+            center = view.center;
+            width = view.size.width;
+            height = view.size.height / 2;
+            path.segments = [];
+            path.add(view.bounds.bottomLeft);
+            for (var i = 1; i < points; i++) {
+                var point = new Point(width / points * i, center.y);
+                path.add(point);
+            }
+            path.add(view.bounds.bottomRight);
+            path.fullySelected = true;
+        }
+
+        function onFrame(event) {
+            pathHeight += (center.y - mousePos.y - pathHeight) / 10;
+            for (var i = 1; i < points; i++) {
+                var sinSeed = event.count + (i + i % 10) * 100;
+                var sinHeight = Math.sin(sinSeed / 200) * pathHeight;
+                var yPos = Math.sin(sinSeed / 100) * sinHeight + height;
+                path.segments[i].point.y = yPos;
+            }
+            if (smooth)
+                path.smooth({ type: 'continuous' });
+        }
+
+        function onMouseMove(event) {
+            mousePos = event.point;
+        }
+
+        function onMouseDown(event) {
+            smooth = !smooth;
+            if (!smooth) {
+              
+                for (var i = 0, l = path.segments.length; i < l; i++) {
+                    var segment = path.segments[i];
+                    segment.handleIn = segment.handleOut = null;
+                }
+            }
+        }
+
+        // Reposition the path whenever the window is resized:
+        function onResize(event) {
+            initializePath();
+        }
+    </script>
 
 	<script>
 		jQuery(document).ready(function() {
@@ -53,219 +113,6 @@
 		});
 	</script>
 
-	<style>
-
-	body {
-		font: 400 15px/1.8 Roboto, sans-serif;
-		color: #777;
-	}
-
-	#headImg h1{
-			font-size: 2.5vw !important;
-	}
-
-	#members_here .fa {
-		color: #404040;
-		font-size: 20px;
-		width: 20px;
-		text-decoration: none;
-		border-radius: 50%;
-		transition: .4s;
-		transform: translate(0px,-30px);
-	}
-
-	#members_here .fa-facebook-official:hover {
-		font-size: 21px;
-		color: #4267b2;
-	}
-
-	#members_here .fa-linkedin-square:hover {
-		font-size: 21px;
-		color: #4875B4;
-	}
-
-	h1 {
-		font-family: montserrat;
-		color: #111;
-	}
-
-	#logo{
-		-ms-transform: translate(0px, -5px); /* IE 9 */
-		-webkit-transform: translate(0px, -5px); /* Safari */
-		transform: translate(0px, -5px);
-	}
-
-	#foot{
-		color: white;
-		font-size: 20px;
-	}
-
-	#foot:hover{
-		color: #4267b2;
-	}
-
-	#about-us-logo{
-		-ms-transform: translate(-10px, -5px); /* IE 9 */
-		-webkit-transform: translate(-10px, -5px); /* Safari */
-		transform: translate(-10px, -5px);
-	}
-
-	#events{
-		background: url("img/event.jpg") fixed ;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	.profile {
-		font-size: 25px;
-		transition: .3s;
-	}
-
-	.profile:hover{
-		background-color: blue;
-	}
-
-	.btn {
-		padding: 10px 20px;
-		background-color: #333;
-		color: #f1f1f1;
-		border-radius: 4px;
-		transition: .4s;
-	}
-
-	.btn:hover, .btn:focus {
-		border: 1px solid #333;
-		background-color: #fff;
-		color: #000;
-	}
-
-	.navbar{
-		font-family: montserrat;
-		border-radius: 0;
-		opacity: 0.9;
-	}
-
-	.navbar li a{
-		color: #d5d5d5 !important;
-	}
-
-	.navbar-nav li a:hover {
-		color: white !important;
-	}
-
-	.navbar-nav li.active a {
-		color: #fff !important;
-		background-color: #29292c !important;
-	}
-
-	.person{
-		border: 10px solid transparent;
-		transition: .6s;
-	}
-
-	.person:hover{
-		border-color: #e4e4fe;
-	}
-
-	.logo-small {
-		color: #fff0ff !important;
-		font-size: 60px;
-	}
-
-	hr{
-		border: 1px solid black;
-		width: 10%
-	}
-
-	.centered{
-		position: absolute;
-		top: 30%;
-		-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-		-webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
-		animation-name: example;
-		animation-duration: 5s;
-		/*transform: translate(-50%, -50%);*/
-	}
-
-	@-webkit-keyframes example {
-		from {opacity: 0;}
-		to {opacity: 1;}
-	}
-
-	/* Standard syntax */
-	@keyframes example {
-		from {opacity: 0;}
-		to {opacity: 1;}
-	}
-
-	.slideanim {visibility:hidden;}
-
-	.slide {
-		animation-name: slide;
-		-webkit-animation-name: slide;
-		animation-duration: 1s;
-		-webkit-animation-duration: 1s;
-		visibility: visible;
-	}
-	@keyframes slide {
-		0% {
-			opacity: 0;
-			transform: translateY(70%);
-		}
-		100% {
-			opacity: 1;
-			transform: translateY(0%);
-		}
-	}
-	@-webkit-keyframes slide {
-		0% {
-			opacity: 0;
-			-webkit-transform: translateY(70%);
-		}
-		100% {
-			opacity: 1;
-			-webkit-transform: translateY(0%);
-		}
-	}
-
-	#gallery{
-		text-align: center;
-		background-color: #ffba8c;
-	}
-
-	.carousel-control.left, .carousel-control.right {
-		background-image:none;
-	}
-
-	.img-responsive{
-		width:100%;
-		height:auto;
-	}
-
-	.footer {
-		position: relative;
-		height: 2%;
-		width: 100%;
-		background-color: #101010;
-		color: white;
-		text-align: left;
-		padding-left: 30px;
-		padding-top: 10px;
-	}
-	.nospace {
-   font-size: 0;
-	}
-	.bg-dark {
-    background-color: #444;
-    color: #fff;
-	}
-	aside {
-    padding: 30px 0;
-	}
-
-
-</style>
-
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" id="myPage">
 
@@ -284,10 +131,10 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#myCarousel">Home</a></li>
+					<li><a href="#myPage">Home</a></li>
 					<li><a class="page-scroll" href="#about_us">About</a></li>
 					<li><a href="#events">Events</a></li>
-					<li><a href="#members_here">Executive Council</a></li>
+					<li><a href="#membershere">Executive Council</a></li>
 					<li><a href="#gallery">Gallery</a></li>
 					<li><a href="#contact_us">Contact</a></li>
 				</ul>
@@ -295,6 +142,7 @@
 		</div>
 	</nav>
 	<!-- NAVBAR ENDS -->
+	<canvas id="canvas" resize ></canvas>
 
 	<a href="#myPage" style="position: fixed; bottom: 20px; right: 30px;">
 		<span class="glyphicon glyphicon-chevron-up" style="font-size: 25px;" title="Top"></span>
@@ -302,7 +150,7 @@
 
 	<!-- CAROUSEL STARTS -->
 	<div id="headImg">
-	<img src="img/iitmandi.jpg" alt="IIT Mandi Logo" style = "height: 800px; width: 100%">
+	<!-- <img src="img/Screenshot 2019-02-09 at 4.18.19 PM.png" alt="IIT Mandi Logo" style = "height: 800px; width: 100%"> -->
 	<div class="centered" style="left:40%;">
 		<h1 style="color:  #ffff99;"><strong>IEEE IIT Mandi</strong></h1>
 	</div>
@@ -327,16 +175,9 @@
 			</div>
 			<div class = "col-sm-5">
 				<p> IEEE IIT Mandi is a student chapter of the Institute of Electrical and Electronics Engineers (IEEE). We are a student-run organization at the IIT Mandi, our motives are to find ourselves and our passions, to have fun and meet new people, gather new experiences, to learn industrial skills to enhance ourselves, to learn about research and innovation in technology, to help our community and to get inspired to change the world!</p>
-				<br>
-				<h3 style="color: black;"> What is IEEE? </h3>
-				<hr style="width: 100%;">
-				<p>The Institute of Electrical and Electronics Engineers, or IEEE, is a technical professional organisation. While it has electrical and electronics engineering
-at its core, it’s composed of engineers, scientists and other professionals, who have interests in
-electrical and computer sciences, engineering, and varied, but related disciplines. It’s dedicated
-to fostering ‘technological innovation and excellence for the benefit of humanity.’. It does so by
-sponsoring conferences, publishing transactions, journals, and magazines, developing
-standards, and through its educational programs. It’s the largest professional association in the
-world !</p>
+				<h3> What is IEEE? </h3>
+
+				<p>The Institute of Electrical and Electronics Engineers, or IEEE, is a technical professional organisation. While it has electrical and electronics engineering at its core, it’s composed of engineers, scientists and other professionals, who have interests in electrical and computer sciences, engineering, and varied, but related disciplines. It’s dedicated to fostering technological innovation and excellence for the benefit of humanity. It does so by sponsoring conferences, publishing transactions, journals, and magazines, developing standards, and through its educational programs. It’s the largest professional association in the world !</p>
 				<!-- <p>The Institute of Electrical and Electronics Engineers, or IEEE, is the world’s leading professional association for the advancement of technology involving electricity. The purpose of IEEE as an organization is to disseminate knowledge of the theory and practice of all aspects of electrical, electronics, communications and computer engineering, as well as computer science, the allied Branches of engineering and the related arts and sciences.</p> -->
 			</div>
 		</div>
@@ -353,7 +194,7 @@ world !</p>
 		<hr style="width: 15%">
 	</div>
 	<br><br>
-	<div class="slideanim">
+	<div class="row slideanim">
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 			<img src="img/IAS.png" style="width: 50%;">
 			<br><br>
@@ -361,12 +202,7 @@ world !</p>
 
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
-			<p style="text-align: left;">The <strong>IEEE Industry Applications Society</strong> is the society of IEEE that concerns itself with
-advancements, theoretical and practical, in electrical and electronic engineering, applied to
-industry and commerce. Along with that, it addresses energy conservation practices, and
-creation of industrial engineering standards. It organises conferences, and events to
-disseminate technical information to its members, and keep them updated on developments in
-the field.</p>
+			<p style="text-align: left;">The <strong>IEEE Industry Applications Society</strong> is the society of IEEE that concerns itself with advancements, theoretical and practical, in electrical and electronic engineering, applied to industry and commerce. Along with that, it addresses energy conservation practices, and creation of industrial engineering standards. It organises conferences, and events to disseminate technical information to its members, and keep them updated on developments in the field.</p>
 			<!-- <p style="text-align: left;">The <strong>Industry Applications Society</strong>, as a transnational organization, is interested in advancement of the theory and practice of electrical and electronic engineering in the development, design, manufacture and application of electrical systems, apparatus, devices and controls to the processes and equipment of industry and commerce; promotion of safe, reliable and economic installations and the professional development of its membership.</p> -->
 		</div>
 	</div>
@@ -377,11 +213,7 @@ the field.</p>
 			<br><br><br>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-			<p style="text-align: left;">The <strong>IEEE Robotics and Automation Society's</strong> has ‘scientific, literary and educational ’endeavours. It
-seeks advancements in fundamental and applied research in robotics and automation
-engineering and science. That means, it supports research into intelligent and adaptable
-systems in unstructured environments, and efficiency and reliability of systems in structured
-environments, among other things.</p>
+			<p style="text-align: left;">The <strong>IEEE Robotics and Automation Society's</strong> has ‘scientific, literary and educational endeavours. It seeks advancements in fundamental and applied research in robotics and automation engineering and science. That means, it supports research into intelligent and adaptable systems in unstructured environments, and efficiency and reliability of systems in structured environments, among other things.</p>
 				<!-- objectives are scientific, literary and educational in character. The Society strives for the advancement of the theory and practice of robotics and automation engineering and science and of the allied arts and sciences, and for the maintenance of high professional standards among its members, all in consonance with the Constitution and Bylaws of the IEEE and with special attention to such aims within the Field of Interest of the Society.</p> -->
 		</div>
 	</div>
@@ -391,12 +223,7 @@ environments, among other things.</p>
 			<img src="img/IES.gif" style="width: 50%;">
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-			<p style="text-align: left;">The <strong>IEEE Industrial Electronics Society</strong> undertakes technical activities that address advancements in
-industrial and manufacturing processes through electronics and engineering sciences - for
-example, the application of intelligent and computer control systems, robotics, data acquisition
-and signal processing, power electronics etc. to better manufacturing processes. IES has its
-roots in IRS, which was one of the two original societies whose merger led to the formation of
-IEEE.</p>
+			<p style="text-align: left;">The <strong>IEEE Industrial Electronics Society</strong> undertakes technical activities that address advancements in industrial and manufacturing processes through electronics and engineering sciences - for example, the application of intelligent and computer control systems, robotics, data acquisition and signal processing, power electronics etc. to better manufacturing processes. IES has its roots in IRS, which was one of the two original societies whose merger led to the formation of IEEE.</p>
 				<!-- through its members encompasses a diverse range of technical activities devoted to the application of electronics and electrical sciences for the enhancement of industrial and manufacturing processes. These technical activities address the latest developments in intelligent and computer control systems, robotics, factory communications and automation, flexible manufacturing, data acquisition and signal processing, vision systems, and power electronics.</p> -->
 		</div>
 	</div>
@@ -443,7 +270,7 @@ IEEE.</p>
 
 				<!--MEMBERS START-->
 
-				<div class="text-center">
+				<div class="text-center" id="membershere">
 					<br>
 					<h1>Developers</h1>
 					<hr style="width: 9%">
@@ -485,10 +312,10 @@ IEEE.</p>
 			</div>
 		</div>
 	</div>
-	<br><br>
+
 	<!--MEMBERS END-->
 
-	<!--GALLERY START--><aside class="bg-dark">
+	<!--GALLERY START-->
 	<div id="gallery">
 		<br>
 		<div class="container-fluid">
@@ -526,12 +353,12 @@ IEEE.</p>
 
 				</div>
 			</div>
-			<br>  <a href="newgallery.html" class="page-scroll btn btn-default btn-xl sr-button">More..</a>
+			<br>  <a href="newgallery.html" class="btn">More..</a>
 			<!-- <a href="newgallery.html" style="font-size: 20px; font-family: montserrat; text-decoration: none;">More..</a> -->
 			<br><br>
 		</div>
 	</div>
-</aside>
+
 	<!--GALLERY END-->
 
 	<!--CONTACT US START-->
@@ -577,9 +404,9 @@ IEEE.</p>
 	<!--CONTACT US ENDS-->
 
 	<!--FOOTER STARTS-->
-	<div class="footer" style="text-align: center;" >
-		<a href="https://www.facebook.com/ieee.iitmandi/" target="_blank" id="foot"><i class="fa fa-facebook-official"></i></a>
-		<p>© 2019 IEEE <a href="https://www.iitmandi.ac.in" target="_blank" style="text-decoration: none;">IIT Mandi</a> | All Rights Reserved </p>
+	<div class="footer" style="text-align: center; line-height: 30px;" >
+		<a href="https://www.facebook.com/ieee.iitmandi/" target="_blank" id="foot"><i class="fa fa-facebook-official"></i></a><br>
+		<span >© 2019 IEEE <a href="https://www.iitmandi.ac.in" target="_blank" style="text-decoration: none;">IIT Mandi</a> | All Rights Reserved </span>
 	</div>
 	<!--FOOTER ENDS-->
 
