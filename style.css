@@ -137,10 +137,14 @@
 	.person{
 		border: 10px solid transparent;
 		transition: .6s;
+		overflow: hidden;
 	}
 
 	.person:hover{
-		border-color: #e4e4fe;
+		/*border-color: #e4e4fe;*/
+		-webkit-transform: scale(1.08);
+  		transform: scale(1.08);
+		
 	}
 
 	.logo-small {
