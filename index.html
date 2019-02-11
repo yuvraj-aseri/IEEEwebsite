@@ -13,12 +13,24 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="./resize-dimension.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 
 	<script>
 		jQuery(document).ready(function() {
-			if($(window).width() < 800){
+			var $window = $(window);
+			var lastWindowWidth = $window.width();
+			$window.resize(function (){
+    		var windowWidth = $window.width();
+    		if (lastWindowWidth !== windowWidth)
+				{
+        	lastWindowWidth = windowWidth;
+    		}
+			});
+
+
+			if(lastWindowWidth < 1000){
 				jQuery('.carousel[data-type=""] .item').each(function(){
 					var next = jQuery(this).next();
 					if (!next.length) {
@@ -85,10 +97,10 @@
 	</nav>
 <script type="text/javascript">
 		$(document).ready(function() {
-        // Transition effect for navbar 
+        // Transition effect for navbar
         $(window).scroll(function() {
           // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > $(window).height()) { 
+          if($(this).scrollTop() > $(window).height()) {
               $('.navbar').addClass('solid');
           } else {
               $('.navbar').removeClass('solid');
@@ -96,7 +108,7 @@
         });
 });
 </script>
-	
+
 	<!-- NAVBAR ENDS -->
 
 	<a href="#myPage" id="uparrow" style="position: fixed; bottom: 20px; right: 30px;">
@@ -104,17 +116,17 @@
 	</a>
 	<!-- CAROUSEL STARTS -->
 	<div id="headImg">
-		<div id="particles-js"></div> 
+		<div id="particles-js"></div>
 		<script type="text/javascript">
 			$("#particles-js").css("height",$(window).height())
 		</script>
-<!-- stats - count particles --> 
-<!-- <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> --> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
-<!-- stats.js lib --> 
+<!-- stats - count particles -->
+<!-- <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> --> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!-- stats.js lib -->
 <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
 	<script type="text/javascript">
-	particlesJS("particles-js", {"particles":{"number":{"value":150,"density":{"enable":true,"value_area":800}},"color":{"value":"#00ff00"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":false,"anim":{"enable":true,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":5,"random":true,"anim":{"enable":true,"speed":30,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ff0000","opacity":.4,"width":1.5},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":100,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+	particlesJS("particles-js", {"particles":{"number":{"value":150,"density":{"enable":true,"value_area":800}},"color":{"value":"#00FFFF"},"shape":{"type":"circle","stroke":{"width":0,"color":"#00FFFF"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":false,"anim":{"enable":true,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":5,"random":true,"anim":{"enable":true,"speed":30,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#00FFFF","opacity":.4,"width":1.5},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":100,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
 </script>
 	<!-- <img src="img/Screenshot 2019-02-09 at 4.18.19 PM.png" alt="IIT Mandi Logo" style = "height: 800px; width: 100%"> -->
 	<div class="centered" style="left:10%; top: 35vh;">
@@ -194,6 +206,16 @@
 				<!-- through its members encompasses a diverse range of technical activities devoted to the application of electronics and electrical sciences for the enhancement of industrial and manufacturing processes. These technical activities address the latest developments in intelligent and computer control systems, robotics, factory communications and automation, flexible manufacturing, data acquisition and signal processing, vision systems, and power electronics.</p> -->
 		</div>
 	</div>
+	<hr style="width: 100%; opacity: .3;">
+	<div class="row slideanim">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<img src="img/wie.png" style="width: 50%;">
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<p style="text-align: justify;">The <strong>IEEE Women in Engineering</strong> is the society of IEEE that concerns with the women related to IEEE.<br>Soon to be established.</p>
+				<!-- through its members encompasses a diverse range of technical activities devoted to the application of electronics and electrical sciences for the enhancement of industrial and manufacturing processes. These technical activities address the latest developments in intelligent and computer control systems, robotics, factory communications and automation, flexible manufacturing, data acquisition and signal processing, vision systems, and power electronics.</p> -->
+		</div>
+	</div>
 	<br>
 </div>
 <!-- SOCITIES END -->
@@ -203,29 +225,29 @@
 	<div id="services" class="container text-center">
 		<div id="band" class="text-center">
 			<br>
-			<h1 style="color: #ff9400;">Events</h1>
+			<h1 style="color: #FFA500;">Events</h1>
 			<hr style="width: 6%">
 		</div>
 		<br><br>
 		<div class="row slideanim">
 			<div class="col-sm-3">
-				<a href="#" style="color: black; text-decoration: none;">
+				<a href="#" style="color: white; text-decoration: none;">
 					<span class="fa fa-calendar-o logo-small"></span>
 					<h4><strong>Upcoming Events</strong></h4>
 					<p style="transform: translate(0px,-10px);">Click to learn more.</p></a>
 				</div>
 				<div class="col-sm-3">
-					<a href="events2018.html" style="color: black; text-decoration: none;">
+					<a href="events2018.html" style="color: white; text-decoration: none;">
 						<span class="fa fa-calendar-check-o logo-small"></span>
 						<h4><strong>Events 2018</strong></h4></a>
 					</div>
 					<div class="col-sm-3">
-						<a href="events2017.html" style="color: black; text-decoration: none;">
+						<a href="events2017.html" style="color: white; text-decoration: none;">
 							<span class="fa fa-calendar-check-o logo-small"></span>
 							<h4><strong>Events 2017</strong></h4></a>
 						</div>
 						<div class="col-sm-3">
-							<a href="events2016.html" style="color: black; text-decoration: none;">
+							<a href="events2016.html" style="color: white; text-decoration: none;">
 								<span class="fa fa-calendar-check-o logo-small"></span>
 								<h4><strong>Events 2016</strong></h4></a>
 							</div>
