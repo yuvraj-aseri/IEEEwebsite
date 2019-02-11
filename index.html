@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>IEEE IIT Mandi Student Chapter</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+
+	<script>
+		jQuery(document).ready(function() {
+			if($(window).width() < 800){
+				jQuery('.carousel[data-type=""] .item').each(function(){
+					var next = jQuery(this).next();
+					if (!next.length) {
+						next = jQuery(this).siblings(':first');
+					}
+					next.children(':first-child').clone().appendTo(jQuery(this));
+
+					for (var i=0;i<2;i++) {
+						next=next.next();
+						if (!next.length) {
+							next = jQuery(this).siblings(':first');
+						}
+						next.children(':first-child').clone().appendTo($(this));
+					}
+				});
+			}
+			else{
+				jQuery('.carousel[data-type="multi"] .item').each(function(){
+					var next = jQuery(this).next();
+					if (!next.length) {
+						next = jQuery(this).siblings(':first');
+					}
+					next.children(':first-child').clone().appendTo(jQuery(this));
+
+					for (var i=0;i<2;i++) {
+						next=next.next();
+						if (!next.length) {
+							next = jQuery(this).siblings(':first');
+						}
+						next.children(':first-child').clone().appendTo($(this));
+					}
+				});
+			}
+		});
+	</script>
+
+</head>
+<body  data-target=".navbar" data-offset="50" id="myPage">
+
+	<!-- NAVBAR STARTS-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#myPage">
+					<img src="img/logo2.png" alt="Logo" style="height: 40px; transform: translate(0px,-10px);" id="logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#myPage">Home</a></li>
+					<li><a class="page-scroll" href="#about_us">About</a></li>
+					<li><a href="#events">Events</a></li>
+					<li><a href="#membershere">Executive Council</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#contact_us">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<script type="text/javascript">
+		$(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > $(window).height()) { 
+              $('.navbar').addClass('solid');
+          } else {
+              $('.navbar').removeClass('solid');
+          }
+        });
+});
+</script>
+	
+	<!-- NAVBAR ENDS -->
+
+	<a href="#myPage" id="uparrow" style="position: fixed; bottom: 20px; right: 30px;">
+		<span class="glyphicon glyphicon-chevron-up" style="font-size: 25px;" title="Top"></span>
+	</a>
+	<!-- CAROUSEL STARTS -->
+	<div id="headImg">
+		<div id="particles-js"></div> 
+		<script type="text/javascript">
+			$("#particles-js").css("height",$(window).height())
+		</script>
+<!-- stats - count particles --> 
+<!-- <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> --> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<!-- stats.js lib --> 
+<!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
+	<script type="text/javascript">
+	particlesJS("particles-js", {"particles":{"number":{"value":150,"density":{"enable":true,"value_area":800}},"color":{"value":"#00ff00"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":false,"anim":{"enable":true,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":5,"random":true,"anim":{"enable":true,"speed":30,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ff0000","opacity":.4,"width":1.5},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":100,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+</script>
+	<!-- <img src="img/Screenshot 2019-02-09 at 4.18.19 PM.png" alt="IIT Mandi Logo" style = "height: 800px; width: 100%"> -->
+	<div class="centered" style="left:10%; top: 35vh;">
+		<h1 style="color: white;  letter-spacing: 1px; font-size:2.5vw;">IEEE IIT Mandi</h1>
+	</div>
+	<!-- style="top:37%; left:20%; -->
+	<div class="centered" style="top:40vh; left:10%">
+		<h1 style="color: white; font-size:5vw;">Institute of Electrical and Electronics Engineers</h1>
+	</div>
+	</div>
+	<!--CAROUSEL ENDS-->
+
+<!--ABOUT US STARTS-->
+<div id="about_us" style="background-color: #fffaf6;">
+	<div class="container">
+		<div id="band" class="text-center">
+			<br>
+			<h1>About Us</h1>
+			<hr style="width: 7%;"><br>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-7">
+				<img src="img/logo1.png" alt="Logo" class="img-responsive" style="width: 550px;" id="about-us-logo">
+			</div>
+			<div class = "col-sm-5" style="text-align: justify;">
+				<p> IEEE IIT Mandi is a student chapter of the Institute of Electrical and Electronics Engineers (IEEE). We are a student-run organization at the IIT Mandi, our motives are to find ourselves and our passions, to have fun and meet new people, gather new experiences, to learn industrial skills to enhance ourselves, to learn about research and innovation in technology, to help our community and to get inspired to change the world!</p>
+				<h3> What is IEEE? </h3>
+
+				<p>The Institute of Electrical and Electronics Engineers, or IEEE, is a technical professional organisation. While it has electrical and electronics engineering at its core, it’s composed of engineers, scientists and other professionals, who have interests in electrical and computer sciences, engineering, and varied, but related disciplines. It’s dedicated to fostering technological innovation and excellence for the benefit of humanity. It does so by sponsoring conferences, publishing transactions, journals, and magazines, developing standards, and through its educational programs. It’s the largest professional association in the world !</p>
+				<!-- <p>The Institute of Electrical and Electronics Engineers, or IEEE, is the world’s leading professional association for the advancement of technology involving electricity. The purpose of IEEE as an organization is to disseminate knowledge of the theory and practice of all aspects of electrical, electronics, communications and computer engineering, as well as computer science, the allied Branches of engineering and the related arts and sciences.</p> -->
+			</div>
+		</div>
+	</div>
+	<br>
+</div>
+<!--ABOUT US ENDS-->
+
+<!--SOCITIES START-->
+<div id="services" class="container text-center">
+	<div  class="text-center">
+		<br>
+		<h1>Socities in IIT Mandi</h1>
+		<hr style="width: 15%">
+	</div>
+	<br><br>
+	<div class="row slideanim">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<img src="img/IAS.png" style="width: 50%;">
+			<br><br>
+		</div>
+
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+			<p style="text-align: justify;">The <strong>IEEE Industry Applications Society</strong> is the society of IEEE that concerns itself with advancements, theoretical and practical, in electrical and electronic engineering, applied to industry and commerce. Along with that, it addresses energy conservation practices, and creation of industrial engineering standards. It organises conferences, and events to disseminate technical information to its members, and keep them updated on developments in the field.</p>
+			<!-- <p style="text-align: left;">The <strong>Industry Applications Society</strong>, as a transnational organization, is interested in advancement of the theory and practice of electrical and electronic engineering in the development, design, manufacture and application of electrical systems, apparatus, devices and controls to the processes and equipment of industry and commerce; promotion of safe, reliable and economic installations and the professional development of its membership.</p> -->
+		</div>
+	</div>
+	<hr style="width: 100%; opacity: .3; ">
+	<div class="row slideanim">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<img src="img/RAS.png" style="width: 50%; transform: translateY(25px);" >
+			<br><br><br>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<p style="text-align: justify;">The <strong>IEEE Robotics and Automation Society's</strong> has ‘scientific, literary and educational endeavours. It seeks advancements in fundamental and applied research in robotics and automation engineering and science. That means, it supports research into intelligent and adaptable systems in unstructured environments, and efficiency and reliability of systems in structured environments, among other things.</p>
+				<!-- objectives are scientific, literary and educational in character. The Society strives for the advancement of the theory and practice of robotics and automation engineering and science and of the allied arts and sciences, and for the maintenance of high professional standards among its members, all in consonance with the Constitution and Bylaws of the IEEE and with special attention to such aims within the Field of Interest of the Society.</p> -->
+		</div>
+	</div>
+	<hr style="width: 100%; opacity: .3;">
+	<div class="row slideanim">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<img src="img/IES.gif" style="width: 50%;">
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<p style="text-align: justify;">The <strong>IEEE Industrial Electronics Society</strong> undertakes technical activities that address advancements in industrial and manufacturing processes through electronics and engineering sciences - for example, the application of intelligent and computer control systems, robotics, data acquisition and signal processing, power electronics etc. to better manufacturing processes. IES has its roots in IRS, which was one of the two original societies whose merger led to the formation of IEEE.</p>
+				<!-- through its members encompasses a diverse range of technical activities devoted to the application of electronics and electrical sciences for the enhancement of industrial and manufacturing processes. These technical activities address the latest developments in intelligent and computer control systems, robotics, factory communications and automation, flexible manufacturing, data acquisition and signal processing, vision systems, and power electronics.</p> -->
+		</div>
+	</div>
+	<br>
+</div>
+<!-- SOCITIES END -->
+
+<!--EVENTS START-->
+<div id="events">
+	<div id="services" class="container text-center">
+		<div id="band" class="text-center">
+			<br>
+			<h1 style="color: #ff9400;">Events</h1>
+			<hr style="width: 6%">
+		</div>
+		<br><br>
+		<div class="row slideanim">
+			<div class="col-sm-3">
+				<a href="#" style="color: black; text-decoration: none;">
+					<span class="fa fa-calendar-o logo-small"></span>
+					<h4><strong>Upcoming Events</strong></h4>
+					<p style="transform: translate(0px,-10px);">Click to learn more.</p></a>
+				</div>
+				<div class="col-sm-3">
+					<a href="events2018.html" style="color: black; text-decoration: none;">
+						<span class="fa fa-calendar-check-o logo-small"></span>
+						<h4><strong>Events 2018</strong></h4></a>
+					</div>
+					<div class="col-sm-3">
+						<a href="events2017.html" style="color: black; text-decoration: none;">
+							<span class="fa fa-calendar-check-o logo-small"></span>
+							<h4><strong>Events 2017</strong></h4></a>
+						</div>
+						<div class="col-sm-3">
+							<a href="events2016.html" style="color: black; text-decoration: none;">
+								<span class="fa fa-calendar-check-o logo-small"></span>
+								<h4><strong>Events 2016</strong></h4></a>
+							</div>
+						</div>
+						<br><br>
+					</div>
+				</div>
+				<!-- EVENTS END -->
+
+				<!--MEMBERS START-->
+
+				<div class="text-center" id="membershere">
+					<br>
+					<h1>Developers</h1>
+					<hr style="width: 9%">
+				</div>
+				<br>
+				<div class="container text-center" id="members_here">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+							<img src="img/Screenshot 2019-02-10 at 3.26.28 PM.png" class="img-circle person" width="50%">
+							<p><strong> Utkarsh Jain </strong></p>
+							<br>
+							<div id="memberslink">
+							<a href="https://www.facebook.com/utkarsh.jain.376" target="_blank"><i class="fa fa-facebook-official"></i></a>
+							<a href="https://www.linkedin.com/in/utkarsh-jain-3a71a6154/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+						</div>
+						<br>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<img src="img/Neeraj.png" class="img-circle person" width="50%">
+						<p><strong> Neeraj Sharma </strong></p>
+						<br>
+						<div id="memberslink">
+						<a href="https://www.facebook.com/profile.php?id=100009505387539" target="_blank"><i class="fa fa-facebook-official"></i></a>
+						<a href="https://www.linkedin.com/in/neeraj-sharma-93895a14a/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+					</div>
+					<br>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Jhalak.png" class="img-circle person" width="50%">
+					<p><strong> Jhalak Choudhary </strong></p>
+					<br>
+					<div id="memberslink">
+					<a href="https://www.facebook.com/jhalak.choudhary.92" target="_blank"><i class="fa fa-facebook-official"></i></a>
+					<a href="https://www.linkedin.com/in/jhalak-choudhary-75921716b/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--MEMBERS END-->
+
+	<!--GALLERY START-->
+	<div id="gallery">
+		<br>
+		<div class="container-fluid">
+			<h1>Gallery</h1>
+			<hr style="width: 10%">
+			<br>
+			<!--The main div for carousel-->
+			<div class="container text-center" style="transform: translate(0px,-10px); ">
+				<div class="carousel slide row" data-ride="carousel" data-type="multi" data-interval="2000" id="fruitscarousel">
+					<div class="nospace">
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="col-md-3 col-sm-12 col-xs-12"><a href="img/27th March_Prof. PC Deshmukh Talk/thumbnail (6).jpg"><img src="img/27th March_Prof. PC Deshmukh Talk/thumbnail (6).jpg" class="img-responsive"></a></div>
+						</div>
+						<div class="item">
+							<div class="col-md-3 col-sm-12 col-xs-12"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08028.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08028.JPG" class="img-responsive"></a></div>
+						</div>
+						<div class="item">
+							<div class="col-md-3 col-sm-12 col-xs-12"><a href="img/30th March_Prof Raghava/IMG_20180330_121414.jpg"><img src="img/30th March_Prof Raghava/IMG_20180330_121414.jpg" class="img-responsive"></a></div>
+						</div>
+						<div class="item">
+							<div class="col-md-3 col-sm-12 col-xs-12"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08052.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08052.JPG" class="img-responsive"></a></div>
+						</div>
+						<div class="item">
+							<div class="col-md-3 col-sm-12 col-xs-12"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08009.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08009.JPG" class="img-responsive"></a></div>
+						</div>
+						<div class="item">
+							<div class="col-md-3 col-sm-12 col-xs-12"><a href="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08057.JPG"><img src="img/Palampur College Trip to IIT Mandi Electrical Labs_26th March 2018/DSC08057.JPG" class="img-responsive"></a></div>
+						</div>
+					</div>
+					</div>
+
+					<a class="left carousel-control" href="#fruitscarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+					<a class="right carousel-control" href="#fruitscarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+
+				</div>
+			</div>
+			<br>  <a href="sidenav.html" class="btn">More..</a>
+			<!-- <a href="newgallery.html" style="font-size: 20px; font-family: montserrat; text-decoration: none;">More..</a> -->
+			<br><br>
+		</div>
+	</div>
+
+	<!--GALLERY END-->
+
+	<!--CONTACT US START-->
+	<div id="contact_us">
+		<div id="contact" class="container" style="padding: 30px 120px;">
+			<div id="band" class="text-center">
+				<h1>Contact Us</h1>
+				<hr style="width: 10%">
+				<i> Thanks for passing by! </i>
+			</div>
+			<br><br>
+
+			<div class="row">
+				<div class="col-md-5" style="transform: translate(-10px,0px);">
+					<p><strong>Query? Drop a note.</strong></p>
+					<p><span class="glyphicon glyphicon-map-marker"></span>  Indian Institute of Technology Mandi, Kamand (H.P.) - 175005</p>
+					<p><span class="glyphicon glyphicon-envelope"></span>  Email: ieeesciitmandi@students.iitmandi.ac.in</p>
+					<p><a href="https://www.facebook.com/ieee.iitmandi/" target="_blank"><i class="fa fa-facebook-official"></i>  Follow us on facebook</a></p>
+
+				</div>
+				<form action="mail.php" method="POST">
+					<div class="col-md-7" style="transform: translate(10px,0px);">
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+							</div>
+							<div class="col-sm-6 form-group">
+								<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+							</div>
+						</div>
+						<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+						<br>
+						<div class="row">
+							<div class="col-md-12 form-group">
+								<input class="btn pull-right" type="submit" value="Send">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--CONTACT US ENDS-->
+
+	<!--FOOTER STARTS-->
+	<div class="footer" style="text-align: center; line-height: 30px;" >
+		<a href="https://www.facebook.com/ieee.iitmandi/" target="_blank" id="foot"><i class="fa fa-facebook-official"></i></a><br>
+		<span >© 2019 IEEE <a href="https://www.iitmandi.ac.in" target="_blank" style="text-decoration: none;">IIT Mandi</a> | All Rights Reserved </span>
+	</div>
+	<!--FOOTER ENDS-->
+
+	<script>
+		$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, a[href='#myPage']").on('click', function(event) {
+	// Make sure this.hash has a value before overriding default behavior
+	if (this.hash !== "") {
+	  // Prevent default anchor click behavior
+	  event.preventDefault();
+
+	  // Store hash
+	  var hash = this.hash;
+
+	  // Using jQuery's animate() method to add smooth page scroll
+	  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+	  $('html, body').animate({
+	  	scrollTop: $(hash).offset().top
+	  }, 900, function(){
+
+		// Add hash (#) to URL when done scrolling (default click behavior)
+		window.location.hash = hash;
+	});
+	} // End if
+});
+
+  $(window).scroll(function() {
+  	$(".slideanim").each(function(){
+  		var pos = $(this).offset().top;
+
+  		var winTop = $(window).scrollTop();
+  		if (pos < winTop + 600) {
+  			$(this).addClass("slide");
+  		}
+  	});
+  });
+})
+</script>
+</body>
+</html>
