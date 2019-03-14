@@ -1,0 +1,178 @@
+
+.main_wrap_feature .owl-carousel .owl-dot.active span,
+.main_wrap_feature .owl-carousel .owl-dot span:hover {
+    border: 2px solid #ed4e4f;
+}
+/*feature section end*/
+/*Blog section start*/
+.blogs_section_wrap .title_sub .service_sub_title {
+    padding: 14px 0 58px
+}
+.blogs_section_wrap {
+    padding: 70px 0 70px;
+}
+.wrap_all_blog {
+    position: relative;
+    clear: both;
+    display: inline-block;
+}
+.v_line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    top: 0px;
+    height: 100%;
+    z-index: 1;
+    border-right: 1px solid rgb(221, 221, 221);
+    border-left: 1px solid rgb(221, 221, 221);
+}
+.blogs_post_wrap {
+    position: relative;
+    padding-right: 50%;
+    width: 100%;
+    clear: both;
+    margin-bottom: 77px;
+}
+.blogs_post_wrap:last-child {
+    margin-bottom: 0;
+}
+.blogs_post_wrap:nth-child(2n) {
+    padding-right: 0;
+    padding-left: 50%;
+}
+.blogs_date_wrap {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+.blogs_post_wrap:nth-child(2n) .blogs_date_wrap {
+    right: auto;
+    left: 0;
+}
+.blogs_post_wrap .wrap_blg_dt {
+    position: relative;
+    width: 100%;
+}
+.blogs_date_wrap .date_blogs {
+    width: 123px;
+    height: 112px;
+    background-color: #ee4f50;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin: 0 auto;
+    padding: 27px 0;
+    position: relative;
+}
+.date_blogs span:nth-child(1) {
+    font-family: Titillium Web;
+    font-size: 16px;
+    line-height: 16.5px;
+    font-weight: 300px;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+}
+.date_blogs span:nth-child(2) {
+    padding-top: 11px;
+    font-family: Titillium Web;
+    font-size: 26.12px;
+    line-height: 26.28px;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+}
+.blog_title_content span {
+    display: block;
+    text-align: right;
+}
+.blogs_post_wrap:nth-child(2n) .blog_title_content span {
+    text-align: left;
+}
+.blogs_post_wrap .blog_title_content:before,
+.blogs_date_wrap .wrap_blg_dt:before {
+    position: absolute;
+    content: '';
+}
+.blogs_post_wrap .wrap_blg_dt:before {
+    width: 35.5%;
+    height: 0;
+    border: 2px solid #d3d0d0;
+    left: 2.5%;
+    top: 50%;
+}
+.blogs_date_wrap .date_blogs:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 8px 0 10px;
+    bottom: -16px;
+    right: 0;
+    border-color: transparent transparent transparent #9e2627;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.blogs_post_wrap:nth-child(2n) .wrap_blg_dt:before {
+    left: auto;
+    right: 2.5%;
+}
+.blogs_post_wrap .blog_title_content {
+    position: relative;
+}
+.blogs_post_wrap .blog_title_content:before {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ee4f50;
+    background-color: #fff;
+    border-radius: 50%;
+    right: -9px;
+    top: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.blogs_post_wrap:nth-child(2n) .blog_title_content:before {
+    right: auto;
+    left: -9px
+}
+.blog_title_content {
+    padding-right: 100px;
+}
+.blogs_post_wrap:nth-child(2n) .blog_title_content {
+    padding-right: 0;
+    padding-left: 100px;
+}
+.blog_title_content span {
+    display: block;
+}
+.blog_title_content .blog_title a {
+    font-family: Titillium Web;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    word-spacing: 6px;
+    text-decoration: none;
+    outline: 0;
+}
+.blog_title_content .blog_content {
+    padding-top: 7px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #686767;
+}
+/*Blog section end*/
