@@ -14,14 +14,14 @@ body {
 
 .quotes{
 	background: #c2e59c;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	
+	background: -webkit-linear-gradient(to right, #003366, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #003366, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	min-height: 35%;
 }
 .carousel-content {
 	font-family: lato, sans-serif;
 	letter-spacing: 2px;
-	font-size: 15px;
+	font-size: 18px;
 	color:white;
 	display:flex;
 	align-items:center;
@@ -101,7 +101,7 @@ canvas{ display: block; vertical-align: bottom; }
 	#events{
 		background: #c2e59c;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	
+	background: linear-gradient(to left, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 		/*background: url("img/event.jpg") fixed ;
 		background-repeat: no-repeat;
@@ -288,7 +288,7 @@ aside {
 
 .footer{
 	background-color: black;
-	color: white; 
+	color: white;
 	font-family: Open Sans!important;
 	font-size: 17px!important;
 }

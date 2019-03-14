@@ -264,7 +264,7 @@
 		</div>
 	</div>
 	<!--CAROUSEL ENDS-->
-	
+
 	<!--ABOUT US STARTS-->
 	<div id="about_us">
 		<div class="container">
@@ -317,7 +317,7 @@
 						<div class="item active ">
 							<div class="carousel-content">
 								<div>
-									<p>Science means constantly walking a tightrope between blind faith and curiosity; between expertise and
+									<p style="color:black;">Science means constantly walking a tightrope between blind faith and curiosity; between expertise and
 										creativity; between bias and openness; between experience and epiphany; between ambition and passion; and
 										between arrogance and conviction - in short, between an old today and a new tomorrow.</p>
 									<h4>-Stephen Jay Gould</h4>
@@ -327,7 +327,7 @@
 						<div class="item">
 							<div class="carousel-content">
 								<div>
-									<p>We will always have STEM with us. Some things will drop out of the public eye and will go away, but there
+									<p style="color:black;">We will always have STEM with us. Some things will drop out of the public eye and will go away, but there
 										will always be science, engineering, and technology. And there will always, always be mathematics.</p>
 									<h4>-Katherine Johnson</h4>
 								</div>
@@ -336,7 +336,7 @@
 						<div class="item">
 							<div class="carousel-content">
 								<div>
-									<p>Science is the acceptance of what works and the rejection of what does not. That needs more courage than we
+									<p style="color:black;">Science is the acceptance of what works and the rejection of what does not. That needs more courage than we
 										might think.</p>
 									<h4>-Jacob Bronowski</h4>
 								</div>
@@ -345,7 +345,7 @@
 						<div class="item">
 							<div class="carousel-content">
 								<div>
-									<p>We pass through this world but once. Few tragedies can be more extensive than the stunting of life, few
+									<pstyle="color:black;">We pass through this world but once. Few tragedies can be more extensive than the stunting of life, few
 										injustices deeper than the denial of an opportunity to strive or even to hope, by a limit imposed from
 										without, but falsely identified as lying within.</p>
 									<h4>-Stephen Jay Gould</h4>
@@ -976,17 +976,16 @@
 	<!--FOOTER ENDS-->
 
 	<script>
-		$(window).scroll(function () {
-			$(".slideanim").each(function () {
-				var pos = $(this).offset().top;
-
-				var winTop = $(window).scrollTop();
-				if (pos < winTop + 600) {
-					$(this).addClass("slide");
-				}
-			});
+	$(window).scroll(function () {
+		$(".slideanim").each(function () {
+			var pos = $(this).offset().top;
+			var winTop = $(window).scrollTop();
+			if (pos < winTop + 600) {
+				$(this).addClass("slide");
+			}
 		});
-	</script>
+	});
+</script>
 </body>
 
 </html>
