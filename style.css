@@ -1,26 +1,49 @@
 
-	html{
-		height: 100%;
-	}
+html{
+	height: 100%;
+	scroll-behavior: smooth;
+}
 
-	body {
-		font: 400 15px/1.8 Roboto, sans-serif;
-		color: #777;
-		height:100%;
-		margin: 0;
-	}
+body {
+	font: 400 15px/1.8 Roboto, sans-serif;
+	color: #777;
+	height:100%;
+	margin: 0;
+	font-weight: lighter;
+}
 
-	canvas{ display: block; vertical-align: bottom; }
+.quotes{
+	background: #c2e59c;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	
+	min-height: 35%;
+}
+.carousel-content {
+	font-family: lato, sans-serif;
+	letter-spacing: 2px;
+	font-size: 15px;
+	color:white;
+	display:flex;
+	align-items:center;
+}
 
-	/* ---- particles.js container ---- */
-	#particles-js{
-		width: 100%;
-		height: 100vh;
-		background-color: black;
-		background-image: url("");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: 50% 50%; }
+#text-carousel {
+	width: 100%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+canvas{ display: block; vertical-align: bottom; }
+
+/* ---- particles.js container ---- */
+#particles-js{
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%; }
 
 	#members_here .fa {
 		color: #404040;
@@ -43,12 +66,12 @@
 	}
 
 	h1{
-		font-family: montserrat;
+		font-family: montserrat, sans-serif;
 		color: #111;
 	}
 
 	h3{
-		font-family: lato;
+		font-family: lato, sans-serif;
 		color: #111;
 		letter-spacing: 1px;
 		line-height: 35px;
@@ -76,10 +99,14 @@
 	}
 
 	#events{
-		background: url("img/event.jpg") fixed ;
+		background: #c2e59c;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	
+
+		/*background: url("img/event.jpg") fixed ;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: center;
+		background-position: center;*/
 	}
 
 	.profile {
@@ -91,11 +118,19 @@
 		background-color: blue;
 	}
 
+	.quote h4{
+		color: black;
+		text-align: right;
+	}
 	.btn {
+		font-size: 15px;
+		font-family: lato, sans-serif;
+		font-weight: 500;
+		letter-spacing: 1px;
 		padding: 10px 20px;
 		background-color: #333;
-		color: #f1f1f1;
-		border-radius: 4px;
+		color: white;
+		border-radius: 30px;
 		transition: .4s;
 	}
 
@@ -116,14 +151,17 @@
 
 	.solid {
 		opacity: 1;
-  		background-color: black;
-  		transition: background-color 1s ease 0s;
-  		transition: opacity 1s ease 0s;
-  		box-shadow: 0 0 5px grey;
+		background-color: black;
+		transition: background-color 1s ease 0s;
+		transition: opacity 1s ease 0s;
+		/*box-shadow: 0 0 5px grey;*/
 	}
 
 	.navbar li a{
 		color: #d5d5d5 !important;
+		font-size: 17px;
+		padding: 18px!important;
+		transition: .3s;
 	}
 
 	.navbar-nav li a:hover {
@@ -142,9 +180,9 @@
 	}
 
 	.person:hover{
-		/*border-color: #e4e4fe;*/
+
 		-webkit-transform: scale(1.08);
-  		transform: scale(1.08);
+		transform: scale(1.08);
 
 	}
 
@@ -155,7 +193,7 @@
 
 	hr{
 		border: 1px solid black;
-		width: 10%
+		width: 10%;
 	}
 
 	.centered{
@@ -165,7 +203,7 @@
 		-webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
 		animation-name: example;
 		animation-duration: 5s;
-		/*transform: translate(-50%, -50%);*/
+
 	}
 
 	@-webkit-keyframes example {
@@ -211,7 +249,6 @@
 
 	#gallery{
 		text-align: center;
-		/*background-color: #ffba8c;*/
 	}
 
 	.carousel-control.left, .carousel-control.right {
@@ -223,51 +260,52 @@
 		height:auto;
 	}
 
-	.footer {
+}
+.nospace {
+	font-size: 0;
+}
+.bg-dark {
+	background-color: #444;
+	color: #fff;
+}
+aside {
+	padding: 30px 0;
+}
+.container_image a {
+	margin-top: 5px;
+	display: block;
+	-webkit-transition: all 0.5s  ease-out; -moz-transition: all 0.5s ease-out; -o-transition: all 0.5s ease-out; transition: all 0.5s ease-out;
+	text-align:center;
+	opacity:1;
+}
+.container_image:hover a {
+	visibility:visible;
+	opacity:0.5;
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
 
-		/*position: relative;*/
-		/*height: 2%;*/
-		width: 100%;
-		background-color: #101010;
-		color: white;
-		text-align: left;
-		padding-left: 30px;
-		padding-top: 10px;
-	}
-	.nospace {
-   font-size: 0;
-	}
-	.bg-dark {
-    background-color: #444;
-    color: #fff;
-	}
-	aside {
-    padding: 30px 0;
-	}
-	.container_image a {
-	    margin-top: 5px;
-	    display: block;
-	    -webkit-transition: all 0.5s  ease-out; -moz-transition: all 0.5s ease-out; -o-transition: all 0.5s ease-out; transition: all 0.5s ease-out;
-	    text-align:center;
-	    visibility:visible;
-	    opacity:1;
-	}
-	.container_image:hover a {
-	    visibility:visible;
-	    opacity:0.5;
-			-moz-transform: scale(1.1);
-	    -webkit-transform: scale(1.1);
-	    transform: scale(1.1);
-	}
-/*body
- {
-    margin: 0;
-    overflow: hidden;
-    height: 100%;
-}*/
+.footer{
+	background-color: black;
+	color: white; 
+	font-family: Open Sans!important;
+	font-size: 17px!important;
+}
 
+.footer h4{
+	font-size: 20px!important;
+}
+.footer a{
+	text-decoration: none;
+}
+
+.footer .social a
+{
+	color: white;
+}
 /* Scale canvas with resize attribute to full size */
 canvas[resize] {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
