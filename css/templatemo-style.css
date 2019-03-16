@@ -180,7 +180,7 @@ hr {
 }
 
 .tm-timeline-connector-vertical {
-    height: 0px;
+    height: 20px;
     width: 4px;
     background-color: #404040;
     margin-left: 260px;
