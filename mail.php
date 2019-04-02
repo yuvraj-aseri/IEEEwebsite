@@ -1,7 +1,7 @@
 <?php
 require 'class.phpmailer.php';
 require 'class.smtp.php';
-  $to = 'b17050@students.iitmandi.ac.in';
+  $to = 'ieeesciitmandi@students.iitmandi.ac.in';
   $name = $_POST["name"];
   $email = $_POST["email"];
   $message = $_POST["comments"];
