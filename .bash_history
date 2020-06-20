@@ -393,3 +393,53 @@ ls
 last
 vim /usr/local/walls.sh 
 exit
+git remote -v
+git pull
+git commit -m "Add Awards"
+git add -A
+git commit -m "Add Awards"
+git push
+git pull
+git commit
+git merge
+git status
+git pull
+git merge
+git status
+x-special/nautilus-clipboard
+copy
+file:///home/jahnvi/Github/awards1.png
+git add img/awards/awards1.png
+git pull
+git status
+git pull
+git status
+git add -A
+git commit
+git commit -m "Update Awards"
+git add -A
+git commit -m "Update Awards"
+git commit
+git push
+git push
+git add -A
+git commit -m "Update Awards"
+git diff
+git ls
+git diff
+git diff log
+git log
+git add -A
+git commit
+git add .
+git commit
+git stash
+git pull
+git pull
+git status
+-git add img/Council/monika.jpg
+git add img/Council/monika.jpg
+git commit
+git add index.html
+git commit
+git status
