@@ -443,3 +443,15 @@ git commit
 git add index.html
 git commit
 git status
+git pull
+git add -A
+git pull
+git commit
+git commit -m "make required changes"
+git pull
+git merge
+git commit
+git push
+git add -A
+git commit -m "Add News"
+git pull
