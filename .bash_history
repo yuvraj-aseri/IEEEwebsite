@@ -455,3 +455,26 @@ git push
 git add -A
 git commit -m "Add News"
 git pull
+git pull
+git add -A
+git commit -m "Change Photo and Add name"
+git pull
+git add -A
+git commit -m "Add LinkedIn Link"
+git pull
+git add -A
+git commit
+git add -A
+git commit
+git pull
+git add -A
+git commit -m "Remove Image"
+git add -A
+git commit -m "Remove Image"
+git pull
+git add -A
+git commit -m "Rename Image"
+git pull
+git add -A
+git commit -m "Minor Changes"
+git pull
