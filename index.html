@@ -83,6 +83,45 @@
 			font-size: 26px!important;
 		}
 
+		.circle {
+			border-radius: 50%;
+			width: 45%;
+			font-weight: bold;
+			display: table;
+		}
+
+		.circle p {
+			vertical-align: middle;
+			display: table-cell;
+			font-size: 9rem;
+			
+		}
+
+		@media screen and (max-width: 1160px){
+			.circle p {
+				font-size: 7rem;
+			}			
+		}
+		@media screen and (max-width: 990px){
+			.circle p{
+				font-size: 9rem;
+				padding: 75px;
+			}			
+		}
+		@media screen and (max-width: 660px){
+			.circle p{
+				font-size: 9rem;
+				padding: 12%;
+			}			
+		}
+		@media screen and (max-width: 390px){
+			.circle p{
+				font-size: 8rem;
+				/* padding: 68px; */
+				padding: 1% ;
+			}			
+		}
+		
 	</style>
 </head>
 
@@ -511,6 +550,19 @@
 				<p style="text-align: justify;">The <strong>IEEE  Power & Energy Society</strong> provides the world's largest forum for sharing the latest in technological developments in the electric power industry, for developing standards that guide the development and construction of equipment and systems, and for educating members of the industry and the general public. Members of the Power & Energy Society are leaders in this field, and they — and their employers — derive substantial benefits from involvement with this unique and outstanding association.</p>
 			</div>
 		</div>
+		<hr style="width: 100%; opacity: .3;">
+		<div class="row slideanim">
+			<div class="container_image">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><a href="https://www.ieee-pes.org/" target="_blank">
+						<img src="img/ieee_sight.png" style="width: 50%;"></a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<p style="text-align: justify;">The <strong>IEEE Special Interest Group on Humanitarian Technology (SIGHT)</strong> is an Institute of Electrical and Electronics Engineers (IEEE) program, instituted by the IEEE Humanitarian Activities Committee (HAC).
+					IEEE SIGHT is a global network of groups consisting of IEEE members and volunteers who identify and address local problems by applying their technical skills and partnering with their local communities.
+					</p>
+			</div>
+		</div>
 		
 		<br>
 	</div>
@@ -628,11 +680,12 @@
 		<br>
 		<div class="container text-center" id="members_here">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"><img src="img/Council/bharat_sir.jpg" class="img-circle person" width="50%">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Council/bharat_sir.jpg" class="img-circle person" width="50%">
 					<p><strong>Dr. Bharat Singh Rajpurohit</strong></p>
 					<div style="line-height: 90%">
 						<p>Branch Advisor</p>
-						<p> IEEE IIT Mandi Student Branch </p>
+						<p> IEEE Student Branch IIT Mandi </p>
 						<a href="mailto:bsr@iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
 					</div>
 					<hr style="width: 42%;border-color:gray"></div>
@@ -644,84 +697,45 @@
 					<p><strong>Dr. Amit Kumar Singha</strong></p>
 					<div style="line-height: 90%">
 						<p>Branch Counselor</p>
-						<p> IEEE IIT Mandi Student Branch </p>
+						<p> IEEE Student Branch IIT Mandi </p>
 						<a href="mailto:amit@iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
 					</div>
 					<hr style="width: 42%;border-color:gray"></div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/sachin.png" class="img-circle person" width="50%">
-					<p><strong>Sachin Chauhan</strong></p>
-					<div style="line-height: 90%">
-						<p>Vice Chair</p>
-						<p>IAS</p>
-						<a href="https://www.linkedin.com/in/sachin.chauhan.790256/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
 				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/hitesh1.jpg" class="img-circle person" width="50%">
-					<p><strong>Dr. Hitesh Shrimali </strong></p>
-					<div style="line-height: 90%">
-						<p>Branch Counselor</p>
-						<p>RAS Society </p>
-						<a href="mailto:hitesh@iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.linkedin.com/in/hitesh-shrimali-56183b19/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>
+				
+				<div class="row">
+					
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<img src="img/Council/Rajesh.jpg" class="img-circle person" width="50%">
+						<p><strong>Dr. Rajesh Pindoriya</strong></p>
+						<div style="line-height: 90%">
+							<p>Branch Mentor</p>
+							<p> IEEE Student Branch IIT Mandi </p>
+							<a href="https://www.linkedin.com/in/rajesh-pindoriya-97261518/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+							<a href="mailto:rajeshpindoriya@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+							<a href="https://www.facebook.com/rajesh.pindoriya.1" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+						</div>
+						<hr style="width: 42%;border-color:gray">
 					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
+
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<img src="img/Council/Adil.jpg" class="img-circle person" width="50%">
-					<p><strong>Adil Usman</strong></p>
+					<p><strong> Dr. Adil Usman </strong></p>
 					<div style="line-height: 90%">
 						<p>Branch Mentor</p>
-						<p>Student Branch</p>
-						<a href="mailto:adilusman@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>
+						<p> IEEE Student Branch IIT Mandi </p>
+						<a href="mailto:adilusman@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
 					</div>
 					<hr style="width: 42%;border-color:gray">
 				</div>
-			</div>
-
-			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/Suryavanshi.jpg" class="img-circle person" width="50%">
-					<p><strong> Suryavanshi Virendrasingh </strong></p>
-					<div style="line-height: 90%">
-						<p>Chairperson</p>
-						<p>Student Branch </p>
-						<a href="https://www.linkedin.com/in/virendrasingh-suryavanshi-47460498/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:b16037@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/virendrasingh.suryavanshi.1" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/Rajesh.jpg" class="img-circle person" width="50%">
-					<p><strong> Rajesh Pindoriya </strong></p>
-					<div style="line-height: 90%">
-						<p>Chairperson</p>
-						<p>IAS Society </p>
-						<p>IEEE Treasurer</p>
-						<a href="https://www.linkedin.com/in/rajesh-pindoriya-97261518/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:rajeshpindoriya@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/rajesh.pindoriya.1" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/manish11.jpg" class="img-circle person" width="50%">
+					<img src="img/Council/manish_sharma.jpg" class="img-circle person" width="50%">
 					<p><strong> Manish Sharma </strong></p>
 					<div style="line-height: 90%">
-						<p>Secretary</p>
-						<p>Student Branch </p>
-						<a href="https://www.linkedin.com/in/manish-sharma-08b162186/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:manish.sharma@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<p>Chairperson</p>
+						<p>IEEE Student Branch IIT Mandi </p>
+						<a href="https://www.linkedin.com/in/manish-sharma7/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:b17126@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
 						<a href="https://www.facebook.com/7manish.kumar.sharma" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
 					</div>
 					<hr style="width: 42%;border-color:gray">
@@ -729,273 +743,459 @@
 			</div>
 
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/gaurav.jpg" class="img-circle person" width="50%">
-					<p><strong> Gaurav Kumar</strong></p>
-					<div style="line-height: 90%">
-						<p>Chairperson</p>
-						<p>RAS Society </p>
-						<a href="https://www.linkedin.com/in/gaurav-kumar-0b0887121" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:b16057@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/gauravkumarbtp" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/divanshu_gupta.jpg" class="img-circle person" width="50%">
-					<p><strong> Divanshu gupta </strong></p>
-					<div style="line-height: 90%">
-						<p>Vice Chairperson</p>
-						<p>RAS Society </p>
-						<a href="https:https://www.linkedin.com/in/divanshu-gupta-975345192/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:b17011@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/divanshu.gupta.338" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/vaishali.jpg" class="img-circle person" width="50%">
-					<p><strong> Vaishali Gojra </strong></p>
-					<div style="line-height: 90%">
-						<p>Secretary</p>
-						<p>RAS Society </p>
-						<a href="https://www.linkedin.com/in/vaishali-gojra-2918bb186/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:gojravaishali24@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https:https://www.facebook.com/vaishali.gojra" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/vivek.jpg" class="img-circle person" width="50%">
-					<p><strong> Vivek Kumar Sharma </strong></p>
-					<div style="line-height: 90%">
-						<p>Treasurer</p>
-						<p>PELS Society </p>
-						<a href="https:https://www.linkedin.com/in/vivek-kumar-sharma-19770113b" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:t18072@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/profile.php?id=100007304495262" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/mayank.jpg" class="img-circle person" width="50%">
-					<p><strong> Mayank Gupta</strong></p>
-					<div style="line-height: 90%">
-						<p>Chairperson</p>
-						<p>PELS Society </p>
-						<a href="https://www.linkedin.com/in/mayank-gupta-0520b418b" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:Mayankstumember@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/profile.php?id=100002665907203" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/Siddhant.jpg" class="img-circle person" width="50%">
-					<p><strong> Siddhant Kumar </strong></p>
-					<div style="line-height: 90%">
-						<p>Vice-Chairman</p>
-						<p>PELS Society </p>
-						<a href="https://www.linkedin.com/in/parth-iitmandi/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:patelparth@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https:https://www.facebook.com/parthpatel149" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/parth.jpg" class="img-circle person" width="50%">
-					<p><strong> Parth Patel </strong></p>
-					<div style="line-height: 90%">
-						<p>Executive Committee Member</p>
-						<p>PELS Society </p>
-						<a href="https://www.linkedin.com/in/parth-iitmandi/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:patelparth@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/parthpatel149" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/ritwik.jpg" class="img-circle person" width="50%">
-					<p><strong> Ritwik Ghosh </strong></p>
-					<div style="line-height: 90%">
-						<p>Chair Person</p>
-						<p>PES Society </p>
-						<a href="https://www.linkedin.com/in/ritwik-ghosh-42441479/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:d17015@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/monika.jpg" class="img-circle person" width="50%">
-					<p><strong> Monika Sharma </strong></p>
-					<div style="line-height: 90%">
-						<p>Vice-Chairperson</p>
-						<p>PES Society </p>
-						<a href="mailto:sharmamonika.6636@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="www.facebook.com/monikasharma6636" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/Deepal.jpg" class="img-circle person" width="50%">
-					<p><strong> Deepal Gupta </strong></p>
-					<div style="line-height: 90%">
-						<p>Treasurer</p>
-						<p>WIE Affinity Group </p>
-						<a href="mailto:T18068@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/profile.php?id=100004883327210" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/shreya.JPG" class="img-circle person" width="50%">
-					<p><strong>Shreya Lanjewar</strong></p>
-					<div style="line-height: 90%">
-						<p>Chair Person </p>
-						<p>WIE Affinity Group </p>
-						<a href="https://www.linkedin.com/in/shrey-a" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:shreyalanjewar99@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/shreya.lanjewar.98" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/Komal.jpg" class="img-circle person" width="50%">
-					<p><strong> Komal Mahale</strong></p>
-					<div style="line-height: 90%">
-						<p>Vice-Chair Person</p>
-						<p>WIE Affinity Group </p>
-						<a href="https://www.linkedin.com/in/komalmahale" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:b17089@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/komal.mahale17" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/anjali.jpg" class="img-circle person" width="50%">
-					<p><strong> Anjali Deep</strong></p>
-					<div style="line-height: 90%">
-						<p>Secretary</p>
-						<p>WIE Affinity Group </p>
-						<a href="https://www.linkedin.com/in/anjali-deep-96361217b/?fbclid=IwAR1uTkEO5JphLAso-hi_IwKGxriaVlzmqv1cTRYJ2DMeG71KXcw7lvT3jAw" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:b18158@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/profile.php?id=100012359647365" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<img src="img/Council/jahnvi.jpg" class="img-circle person" width="50%">
-					<p><strong>Jahnvi Gupta</strong></p>
+					<p><strong> Jahnvi Gupta </strong></p>
 					<div style="line-height: 90%">
-						<p>Web Developer</p>
-						<p>WIE Affinity Group </p>
-						<a href="https://www.linkedin.com/in/jahnvi-gupta-06315816b/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:b18060@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/jahnvi.gupta.3956" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+						<p>Vice Chairperson</p>
+						<p>IEEE Student Branch IIT Mandi</p>
+						<a href="https://www.linkedin.com/mwlite/in/jahnvi-gupta-06315816b" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:jahnvigupta11@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://m.facebook.com/jahnvi.gupta.3956?ref=bookmarks" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
 					</div>
 					<hr style="width: 42%;border-color:gray">
 				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/shrikha.jpg" class="img-circle" width="50%">
-					<p><strong>Shrikha</strong></p>
+					<img src="img/Council/tushika.jpg" class="img-circle person" width="50%">
+					<p><strong> Tushika Singh </strong></p>
 					<div style="line-height: 90%">
-						<p>Web Developer</p>
-						<p>WIE Affinity Group </p>
-						<a href="https://www.linkedin.com/in/shrikha-m-a382701a1/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:b18143@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/Shrikha17" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+						<p>Secretary</p>
+						<p>IEEE Student Branch IIT Mandi </p>
+						<a href="https://www.linkedin.com/in/tushikasingh" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:tushikasingh@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/tushika.singh.562" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
 					</div>
 					<hr style="width: 42%;border-color:gray">
 				</div>
 
-			</div>	
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="row">
+						<div class="circle person center-block" style="background-color: #adc8ee;">
+							<p>SK</p>
+						</div>
+					</div>
+					<p><strong> Siddhant Kumar </strong></p>
+					<div style="line-height: 90%">
+						<p>Treasurer</p>
+						<p>IEEE Student Branch IIT Mandi </p>
+						<a href="mailto:siddhantkumar@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+			</div>
 
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/harmanan.png" class="img-circle person" width="50%">
-					<p><strong> Harnaman Kaur</strong></p>
+					<img src="img/Council/dinesh.jpg" class="img-circle person" width="50%">
+					<p><strong> Dinesh Bhagat </strong></p>
 					<div style="line-height: 90%">
-						<p>Executive Committee</p>
-						<p>WIE Affinity Group </p>
-						<a href="mailto:harnaman@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<p>Web Developer </p>
+						<p>IEEE Student Branch IIT Mandi </p>
+						<a href="https://www.linkedin.com/in/dinesh-bhagat-05a1b9171/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:db.dineshbhagat07@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/dinesh.bhagat201" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Council/harnaman.jpg" class="img-circle person" width="50%" height="30%">
+					<p><strong> Harnaman Kaur </strong></p>
+					<div style="line-height: 90%">
+						<p>Web Developer</p>
+						<p>IEEE Student Branch IIT Mandi </p>
+						<a href="https://www.linkedin.com/in/harnaman-kaur/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:harnaman24@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
 						<a href="https://www.facebook.com/harnaman.kaur.3" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
 					</div>
 					<hr style="width: 42%;border-color:gray">
 				</div>
-			
+
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/shashi.jpg" class="img-circle person" width="50%">
-					<p><strong> Shashi Kumar Fagna</strong></p>
+					<img src="img/Council/kratika.jpg" class="img-circle person" width="50%">
+					<p><strong> Kratika Gupta</strong></p>
 					<div style="line-height: 90%">
-						<p>Exceutive Committee Member</p>
-						<p>RAS Society </p>
-						<a href="https://www.linkedin.com/in/shashi-kumar-fagna-81941b164/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:shashikumarfagna@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/shashikumar.fagna" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/ankit.jpg" class="img-circle person" width="50%">
-					<p><strong> Ankit Karan </strong></p>
-					<div style="line-height: 90%">
-						<p>Exceutive Committee Member </p>
-						<a href="https://www.linkedin.com/in/ankit-karan-47904b182/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:b18159@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="www.facebook.com/ankit.karan.58" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
-					</div>
-					<hr style="width: 42%;border-color:gray">
-				</div>
-			</div>
-			<div class="row"></div>
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/dilshad.jpg" class="img-circle person" width="50%">
-					<p><strong> MD Irshad K.Ansari </strong></p>
-					<div style="line-height: 90%">
-						<p>Secretary</p>
-						<p>PES Society </p>
-						<a href="https://www.linkedin.com/in/md-irshad-k-ansari-bb9820185/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:irshadkarim@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<p>Web Developer</p>
+						<p>IEEE Student Branch IIT Mandi </p>
+						<a href="https://www.linkedin.com/in/kratika-gupta-7495221a5/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:kratikamanan@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
 					</div>
 					<hr style="width: 42%;border-color:gray">
 				</div>
 
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+			</div>
+
+			<div class="row">
+
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="img/Council/himanshu.jpg" class="img-circle person" width="50%">
-					<p><strong> Himanshu Bhagel</strong></p>
+					<img src="img/Council/sachin.JPG" class="img-circle person" width="50%">
+					<p><strong> Sachin Chauhan </strong></p>
 					<div style="line-height: 90%">
-						<p>Exceutive Committee Member</p>
-						<p>RAS Society </p>
-						<a href="https://www.linkedin.com/in/himanshu-baghel-774336154/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
-						<a href="mailto:b17052@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
-						<a href="https://www.facebook.com/himanshu.baghel.9210" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+						<p>Chairperson</p>
+						<p>IAS - PES Society </p>
+						<a href="https://www.linkedin.com/in/sachin-chauhan-a0899480/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:sachin.chauhan@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/sachin.chauhan.790256/" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
 					</div>
 					<hr style="width: 42%;border-color:gray">
 				</div>
 				
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="row">
+						<div class="circle person center-block" style="background-color: #9fc9ff;">
+							<p>DP</p>
+						</div>
+					</div>
+					<p><strong> Deepsikha Panda </strong></p>
+					<div style="line-height: 90%">
+						<p>Vice Chairperson</p>
+						<p>IAS - PES Society </p>
+						<a href="mailto:dspandaele@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="row">
+						<div class="circle person center-block" style="background-color: #adc8ee;">
+							<p>AK</p>
+						</div>
+					</div>
+					<p><strong> Anuj Kumar Rao </strong></p>
+					<div style="line-height: 90%">
+						<p>Secretary</p>
+						<p>IAS - PES Society </p>
+						<a href="https://www.linkedin.com/in/anuj-kumar-rao-7129811ab" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:raoanuj@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/anuj.rao.777" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+			</div>
+			
+			<div class="row">
+				
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="row">
+						<div class="circle person center-block" style="background-color: #adc8ee;">
+							<p>JS</p>
+						</div>
+					</div>
+					<p><strong> Jasvant Singh </strong></p>
+					<div style="line-height: 90%">
+						<p>Treasurer</p>
+						<p>IAS - PES Society </p>
+						<a href="mailto:jasvants007@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://m.facebook.com/jasvantsingh.rajput.58" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="row">
+						<div class="circle person center-block" style="background-color: #adc8ee;">
+							<p>SK</p>
+						</div>
+					</div>
+					<p><strong> Siddhant Kumar </strong></p>
+					<div style="line-height: 90%">
+						<p>Chairperson</p>
+						<p>PELS - IAS Society</p>
+						<a href="mailto:siddhantkumar@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="row">
+						<div class="circle person center-block" style="background-color: #adc8ee;">
+							<p>MA</p>
+						</div>
+					</div>
+					<p><strong> Moshin Asad </strong></p>
+					<div style="line-height: 90%">
+						<p>Vice Chairperson</p>
+						<p>PELS - IAS Society</p>
+						<a href="mailto: mohsinasad007@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://m.facebook.com/profile.php?id=100002212251268&ref=content_filter" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+			</div>
+			
+			<div class="row">
+				
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Council/garima.jpg" class="img-circle person" width="50%">
+					<p><strong> Garima Chahar </strong></p>
+					<div style="line-height: 90%">
+						<p>Secretary</p>
+						<p>PELS - IAS Society</p>
+						<a href="https://www.linkedin.com/in/garimachahar" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:garima.chahar08@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/infinity.stark.15" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+				
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Council/dinesh.jpg" class="img-circle person" width="50%">
+					<p><strong> Dinesh Bhagat </strong></p>
+					<div style="line-height: 90%">
+						<p>Treasurer</p>
+						<p>PELS - IAS Society</p>
+						<a href="https://www.linkedin.com/in/dinesh-bhagat-05a1b9171/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:db.dineshbhagat07@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/dinesh.bhagat201" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Council/tushika.jpg" class="img-circle person" width="50%">
+					<p><strong> Tushika Singh </strong></p>
+					<div style="line-height: 90%">
+						<p>Chairperson</p>
+						<p>WIE Society</p>
+						<a href="https://www.linkedin.com/in/tushikasingh" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:tushikasingh@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/tushika.singh.562" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<!-- <img src="img/Council/" class="img-circle person" width="50%"> -->
+					<div class="row">
+						<div class="circle person center-block" style="background-color: #adc8ee;">
+							<p>NN</p>
+						</div>
+					</div>
+					<p><strong>Niveditha N</strong></p>
+					<div style="line-height: 90%">
+						<p>Vice Chairperson </p>
+						<p>WIE Society </p>
+						<a href="mailto:b19098@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Council/kratika.jpg" class="img-circle person" width="50%">
+					<p><strong> Kratika Gupta</strong></p>
+					<div style="line-height: 90%">
+						<p>Secretary</p>
+						<p>WIE Society</p>
+						<a href="https://www.linkedin.com/in/kratika-gupta-7495221a5/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:kratikamanan@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Council/harnaman.jpg" class="img-circle person" width="50%">
+					<p><strong> Harnaman Kaur</strong></p>
+					<div style="line-height: 90%">
+						<p>Treasurer</p>
+						<p>WIE Society </p>
+						<a href="https://www.linkedin.com/in/harnaman-kaur/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:harnaman24@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/harnaman.kaur.3" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Council/divanshu.jpg" class="img-circle person" width="50%">
+					<p><strong>Divanshu Gupta</strong></p>
+					<div style="line-height: 90%">
+						<p>Chairperson</p>
+						<p>RAS Society</p>
+						<a href="https://www.linkedin.com/in/divanshu-gupta-975345192" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:b17011@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/divanshu.guptq.338" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Council/ankit.jpg" class="img-circle" width="50%">
+					<p><strong>Ankit Karan</strong></p>
+					<div style="line-height: 90%">
+						<p>Vice Chairperson</p>
+						<p>RAS Society</p>
+						<a href="https://www.linkedin.com/in/ankit-karan-47904b182/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:karanankit01@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/ankit.karan.58/" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+				
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<!-- <img src="img/Council/" class="img-circle person" width="50%"> -->
+					<div class="row">
+						<div class="circle person center-block" style="background-color: #adc8ee;">
+							<p>DS</p>
+						</div>
+					</div>
+					<p><strong> Deeksha Singh </strong></p>
+					<div style="line-height: 90%">
+						<p>Secretary</p>
+						<p>RAS Society</p>
+						<a href="http://linkedin.com/in/diksha-singh-3b109a192" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:diksha18032000@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/profile.php?id=100027935970156" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>				
+			</div>	
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Council/abhishekdhyani.jpg" class="img-circle person" width="50%">
+					<p><strong> Abhishek Dhyani </strong></p>
+					<div style="line-height: 90%">
+						<p>Treasurer</p>
+						<p>RAS Society </p>
+						<a href="https://www.linkedin.com/in/abhishekdhyani13/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:dhyaniabhishek13@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/abhishekd13" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Council/bhaskara_rao.jpg" class="img-circle person" width="50%">
+					<p><strong> Bhaskara Rao Ravada </strong></p>
+					<div style="line-height: 90%">
+						<p>Chairperson</p>
+						<p>IEEE SIGHT Group</p>
+						<a href="https://www.linkedin.com/in/bhaskara-rao-ravada-649645180/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:baskar.ravada@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/baskar.ravada/" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+				
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Council/sachin.JPG" class="img-circle person" width="50%">
+					<p><strong> Sachin Chauhan </strong></p>
+					<div style="line-height: 90%">
+						<p>Secretary</p>
+						<p>IEEE SIGHT Group</p>
+						<a href="https://www.linkedin.com/in/sachin-chauhan-a0899480/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:sachin.chauhan@ieee.org"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/sachin.chauhan.790256/" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>	
+			</div>	
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="row">
+						<div class="circle person center-block" style="background-color: #adc8ee;">
+							<p>AN</p>
+						</div>
+					</div>
+					<p><strong> Arpit Nandi </strong></p>
+					<div style="line-height: 90%">
+						<p>Treasurer</p>
+						<p>IEEE SIGHT Group</p>
+						<a href="https://www.linkedin.com/in/arpit-nandi/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:arpit.nandi@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/arpit.nandi/" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Council/sanjanak.jpg" class="img-circle person" width="50%">
+					<p><strong> Sanjana K </strong></p>
+					<div style="line-height: 90%">
+						<p>Treasurer</p>
+						<p>IEEE SIGHT Group</p>
+						<a href="https://www.linkedin.com/in/sanjana-k-2793421b5" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:b19139@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://www.facebook.com/sanjana.k.102" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+				
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="row">
+						<div class="circle person center-block" style="background-color: #adc8ee;">
+							<p>RJ</p>
+						</div>
+					</div>
+					<p><strong> Rushiraj Jawale </strong></p>
+					<div style="line-height: 90%">
+						<p>Executive Committee</p>
+						<p>IEEE SIGHT Group</p>
+						<a href="https://www.linkedin.com/in/rsjawale/" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:s18022@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>	
+			</div>	
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<img src="img/Council/utkarsha.JPG" class="img-circle person" width="50%">
+					<p><strong> Utkarsha Kumbhar </strong></p>
+					<div style="line-height: 90%">
+						<p>Executive Committee</p>
+						<p>IEEE SIGHT Group</p>
+						<a href="mailto:b19040@students.iitmandi.ac.in"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+				
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="row">
+						<div class="circle person center-block" style="background-color: #adc8ee;">
+							<p>YB</p>
+						</div>
+					</div>
+					<p><strong> Yogita Bhat </strong></p>
+					<div style="line-height: 90%">
+						<p>Executive Committee</p>
+						<p>IEEE SIGHT Group</p>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>	
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="row">
+						<div class="circle person center-block" style="background-color: #adc8ee;">
+							<p>SS</p>
+						</div>
+					</div>
+					<p><strong> Sai Sushma </strong></p>
+					<div style="line-height: 90%">
+						<p>Executive Committee</p>
+						<p>IEEE SIGHT Group</p>
+						<a href="https://www.linkedin.com/in/sushma-kalishetty-4178341b2" target="_blank"><i class="fab fa-linkedin" style="color: #4875B4;"></i></a>&nbsp
+						<a href="mailto:saisushma.er@gmail.com"><i class="fas fa-envelope" style="color: #4875B4"></i></a>&nbsp
+						<a href="https://m.facebook.com/sai.sushma.395" target="_blank"><i class="fab fa-facebook" style="color: #3B5998"></i></a>
+					</div>
+					<hr style="width: 42%;border-color:gray">
+				</div>
+			</div>	
+
 			</div>
 		</div>
 	</div>
