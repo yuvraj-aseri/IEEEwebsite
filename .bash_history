@@ -1,129 +1,3 @@
-ls
-git status
-cat index.html
-git log
-apt list | grep git
-apt list | grep git
-apt list | git
-apt list | grep git
-ls
-cd /var/www/html/
-ls
-ls | grep ieee
-cd ieee/
-ls
-cd /etc/
-ls
-cd apache2/
-ls
- d sites-enabled/
-ls
-cd sites-enabled/
-ls
-cat ieee.conf
-cd ..
-cd sites-available/
-ls
-netstat -a
-git pull
-git pull
-git pull
-exit
-ls
-ifconfig
-ls
-cd ..
-ls
-cd /etc/apache2/
-ls
-cd sites-enabled/
-ls
-cat ieee.conf 
-cat ewok.conf 
-ls
-cat 000-default.conf 
-ls
-cd /var/www/html/
-cat index.html
-cat index.html
-ls
-cd ieee
-ls
-mkdir temp
-cd temp/
-git clone https://github.com/the-utkarshjain/IEEE-bootstrap.git
-ls -l
-ls -a
-cd IEEE-bootstrap/
-ls -l
-ls -a
-cp -r .git/ /var/www/html/ieee/
-cd ..
-cd ..
-git log
-git pull
-ls
-ls -a
-mv index.html index.php
-ls
-ls
-ls
-rm index.php 
-ls
-ls
-rm events2016.html events2017.html events2018.html events2019.html 
-ls
-ls
-ls
-rm class.phpmailer.php class.smtp.php mail.php 
-rm README.md 
-rm event\ template.html 
-ls
-rm sidenav.html newgallery.html 
-ls
-rm style.css style2.css 
-rm w3style.css 
-rm -rf css
-rm -rf img/
-ls
-ls
-cd temp/IEEE-bootstrap/
-ls
-cp index.html ~/
-rm index.html
-ls
-cp awards.html ~/
-rm awards.html 
-ls
-cp events2016.html ~/
-cp events2017.html ~/
-cp events2018.html ~/
-cp events2019.html ~/
-rm events2016.html ~/
-rm events2016.html
-ls
-rm events2017.html 
-rm events2018.html 
-rm events2019.html 
-ls
-cp upcomingEvents.html ~/
-rm upcomingEvents.html
-ls
-cp class.phpmailer.php ~/
-cp class.smtp.php ~/
-cp mail.php ~/
-rm class.phpmailer.php
-rm class.smtp.php 
-rm mail.php 
-ls
-cp README.md ~/
-rm README.md 
-ls
-cp event\ template.html ~/
-rm event\ template.html
-ls
-cp sidenav.html ~/
-cp newgallery.html ~/
 rm sidenav.html 
 rm newgallery.html 
 ls
@@ -478,3 +352,149 @@ git pull
 git add -A
 git commit -m "Minor Changes"
 git pull
+git add -A
+git commit -m "Update Website"
+git push
+git pull
+git add -A
+git commit
+git commit -m "Update Website"
+git pull
+git add -A
+git pull
+git commit
+git add -A
+git commit
+git remote -v
+git pull
+git fetch upstream
+git add -A
+git push
+git pull
+git pull
+git add -A
+git commit -m "Minor Changes"
+ls
+exit
+LS
+ls
+cat index.html
+exit;
+ls
+ls
+apt list
+apt list | grep firefox
+firefox
+firefox -no-remote
+man firefox
+ifconfig
+df -h
+lsblk
+free -m
+ls
+firefox -no-remote
+echo $DISPLAY
+export
+export DISPLAY=:0
+ls
+echo $DISPLAY 
+firefox -no-remote
+exit
+ls
+cat /etc/ssh/sshd_config 
+exit
+ls
+firefox -no-remote
+ls
+chromium
+chrome
+exit
+ls
+google-chrome
+chromium-browser
+whereis google-chrome
+exit
+firefox -no-remote
+exit
+node
+ls
+apt list | grep node
+apt list | grep npm
+ls
+cd ..
+ls
+ls
+cat index.
+cat index.php 
+cat index.html
+ls
+cat students.php 
+exit
+ls
+httpd -S
+apache2ctl -S
+cd /etc/apache2/
+ls
+cd sites-enabled/
+ls
+cat 000-default.conf 
+ls
+cat cloud.conf 
+exit
+docker ps
+exit
+ls
+w3m insite.iitmandi.ac.in
+exit
+ls
+ps
+ps -u
+man ps
+ps -e
+ps -e | grep node
+ps -e | grep apache
+mongo
+firefox -no-remote
+echo $DISPLAY
+export DISPLAY=:0
+echo $DISPLAY
+firefox -no-remote
+exit
+ls
+firefox -no-remote
+exit
+free -m
+exit
+ls
+firefox -no-remote
+firefox -no-remote
+ps -u
+firefox -no-remote
+ps -e
+ps -e | firefox
+ps -e | grep firefox
+cat /etc/services 
+firefox -no-remote
+exit
+firefox -no-remote
+firefox -no-remote
+firefox -no-remote
+firefox -no-remote
+eixt
+exit
+node -v
+exit
+ls
+w3m google.com
+exit
+ifconfig
+route -n
+exit
+ls
+exit
+git pulll
+git pull
+git pull
+git pull
+git pull
+exit

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<title>Login</title>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link rel=stylesheet href="iss/image/login_css.css" type="text/css" >
+<style type="text/css">
+<!--
+.portSel { width:145px; font-family: Arial}
+-->
+</style>
+
+    <script src="/jquery_211min.js"></script>
+    <script src="/jsencrypt_min.js"></script>
+    <script type="text/javascript">
+    var isEncode = 0;
+    function apply_ecryptdata()
+    {
+        if(isEncode == 0)
+        {
+            var linkStr  = "Encrypt.js";
+
+            $.ajax({
+                async: false, /*it is necessary for google chrome*/
+                url : linkStr,
+                type: "Get",
+                dataType: "script",
+			
+                success: function(response)
+                {	
+                    pubkey = "-----BEGIN PUBLIC KEY-----" + EN_DATA + "-----END PUBLIC KEY-----";
+
+                    // Encrypt with the public key...
+                    var encrypt = new JSEncrypt();
+                    encrypt.setPublicKey(pubkey);
+                    encryptedacc = encrypt.encrypt($('#pelican').val());
+                    encryptedpw = encrypt.encrypt($('#pinkpanther').val());
+
+                    $('#pelican').css('color','FFFFFF');
+                    $('#pelican_ecryp').val(encryptedacc);
+                    $('#pinkpanther').css('color','FFFFFF');
+                    $('#pinkpanther_ecryp').val(encryptedpw);
+                    $('#currlang').val($('#currlang1').val());
+                    isEncode = 1;
+                    /* If user ignore Smart_Wizard.htm, check web page is Standard mode or ASV mode  */
+                    if(Smart_Wizard_show == 0)/* ignore Smart_Wizard.htm */
+                    {
+                        if(Web_Mode_State == 1)
+                            $('#BrowsingPage').val('index_redirect.htm');
+                        else
+                            $('#BrowsingPage').val('ASV_main.html');
+                    }
+                    $('#formLogin_ecryp').submit();
+                }
+            });
+        }
+    }
+    </script>
+
+    <script language="Javascript">
+        function get_server_ip()
+        {
+            var re = /[ps]:\/\/[\[]*([\w\.\:]+)[\]]*[\/]*/; /* Regular Expression */
+            /*var re = /[ps]:\/\/[\[]*([\w\.\:\%]+)[\]]*[\/];*/
+            var result = re.exec(document.location.href);
+            if (result) /* succeed */
+            {            
+                var result_escape = escape(result[1]);
+                result_escape=result_escape.replace(/%3A/g, ":")//For IPv6 Address
+                return result_escape;
+            }
+            else /* failed */
+            {
+                return "Device";
+            }
+        }
+        var deviceIP = get_server_ip();
+        var LoginUser = 'admin';
+        var browsingPage = 'index_redirect.htm';
+        var LoginNameLength = 15;
+        var LoginPasswordLength = 20;
+        var supportMultilang = '7';
+        var multilanguage = [['0', "English"],
+['1', "Traditional Chinese"],
+['2', "Simplified Chinese"],
+['3', "German"],
+['4', "Spain"],
+['5', "French"],
+['6', "Italian"],
+['7', "Japanese"],
+['8', "Portuguese"],
+['9', "Russia"]];
+        var currmultilanguage = '0';
+    </script>
+</head>
+<body onload='document.formLogin.pinkpanther.focus();'>
+    <script language="Javascript">
+
+    if(window.screen.width == 1280){
+        document.write("<div name=tabBigTitleLogin id=tabBigTitleLogin class=tabBigTitleLogin style='center'>");
+    }else {
+    document.write("<div name=tabBigTitleLogin id=tabBigTitleLogin class=tabBigTitleLogin>");
+    }
+    document.write("<table><tr><div class=imgBigTitle><td valign=top noWrap>&nbsp;&nbsp;&nbsp;<font class=tdBigTitle>Connect to "+deviceIP+"</font>");
+    </script>
+
+        <img name=imgBigTitleLogin id=imgBigTitleLogin class=imgBigTitleLogin src='iss/image/lightblue.jpg' />
+        <img name=imgBigTitleLoginKey id=imgBigTitleLoginKey class=imgBigTitleLoginKey src='iss/image/login_key.jpg' /></td></div></tr>
+    </table></div>
+	<iframe name="empty_iframe" style="display:none" src="about:blank"></iframe>
+    <form name=formLogin_ecryp id=formLogin_ecryp  method=post target='_top' action="homepage.htm" autocomplete="off">
+	<script language="Javascript">
+	
+	 $('#formLogin_ecryp').html(
+	 "<input type='hidden' class='flatL'  name='pelican_ecryp' id='pelican_ecryp' autocomplete='off' >"+
+	 "<input type='hidden' class='flatL' name='pinkpanther_ecryp' id='pinkpanther_ecryp' autocomplete='off'> "+
+	 "<INPUT type='Hidden' id='BrowsingPage' name='BrowsingPage' value="+browsingPage+">"+
+	 "<INPUT type='Hidden' name=currlang id=currlang>"+
+	 "<INPUT type='hidden' name='changlang' id='changlang' value=0>"
+	 );
+	 </script>
+	</form>
+
+	<form name=formLogin id=formLogin method=post target="empty_iframe" action="/" autocomplete="off" >
+    <table name=tabLoginContent id=tabLoginContent class=tabLoginContent>
+    <script language="Javascript">
+            if(LoginUser=="") {
+                document.write("<tr><td colspan=2>Enter your username and password</td>");
+                document.write("<tr><td colspan=2>&nbsp;</td>");
+                document.write("<tr>");
+                document.write("<td width=100>Username</td>");
+                document.write("<td><input class=flatL type='text' name='pelican' id='pelican' autocomplete='off' maxlength="+LoginNameLength+">" );
+                document.write("</td>");
+            }else {
+                document.write("<tr><td colspan=2>Enter your password</td>");
+                document.write("<tr><td colspan=2>&nbsp;</td>");
+            }
+
+            document.write("<tr>");
+            document.write("<td width=100>Password</td>");
+            document.write("<td><input class=flatL type='password' name='pinkpanther' id='pinkpanther' autocomplete='off' onkeypress = 'return for_enter(event)' maxlength="+LoginPasswordLength+">");
+            document.write("</td>");
+
+        var i=0;
+        if (supportMultilang != 0)
+        {
+            document.write("<tr><td>Language<td><select class=portSel name=currlang1 id=currlang1 style='width:250px' onChange='changelang();'>");
+
+            for(i=0; i < multilanguage.length; i++){
+                document.write("<option value ='" + multilanguage[i][0] + "'>" + multilanguage[i][1] + "</option>");
+            }
+        }
+        document.write("<tr><td colspan=2>&nbsp;</td>");
+        /*document.write("<tr><td colspan=2>&nbsp;</td>");*/
+
+        if (supportMultilang == 0)
+            document.write("<tr><td colspan=2>&nbsp;</td>");
+    </script>
+
+        <tr><td colspan=2 align=center>
+            <!--<input type=submit value='OK' class=btnText>-->
+            <input type=submit value='OK' class=btnText onClick='apply_ecryptdata();' >
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type=button value='Cancel' class=btnText onClick='window.location.reload();'>
+        </tr>
+    </table>
+    <script language="Javascript">
+            if(LoginUser!="") {
+                document.write("<input type='hidden' name='pelican' id='pelican' value="+ LoginUser + " >");
+            }
+            document.write("<INPUT type='Hidden' name='BrowsingPage' value="+browsingPage+">");
+        if (supportMultilang != 0)
+        {
+            document.write("<INPUT type='hidden' name='changlang1' value=0>");
+            document.formLogin.currlang1.value = currmultilanguage;
+			$('#currlang').val(currmultilanguage);
+        }
+
+        function for_enter(event)
+        {
+            if(event.keyCode == 13)
+            {
+                apply_ecryptdata();
+            }
+        }
+		
+	$("#formLogin").submit(function(e)
+	{
+        var userAgent = navigator.userAgent;
+		var vendor = navigator.vendor;			
+		if(userAgent.indexOf("Edge") > -1)
+		{
+		    $("#pelican").prop("disabled",true);
+			$("#pinkpanther").prop("disabled",true);
+		}
+		else if (userAgent.indexOf("Chrome") > -1&&vendor.indexOf("Google")>-1)
+		{
+		  $("#pelican").attr("name","");
+		  $("#pinkpanther").attr("name","");
+		}
+		else
+		{
+			$("#pelican").prop("disabled",true);
+			$("#pinkpanther").prop("disabled",true);
+		}
+		return true;
+    });
+		
+    </script>
+</form>
+
+<script language="Javascript">
+    function changelang(){
+       document.formLogin.changlang1.value = 1;
+       $('#changlang').val(1);
+	   $('#currlang').val($('#currlang1').val());
+	   $('#formLogin_ecryp').submit();
+   }
+</script>
+</body>
+</html>
+;²FŠ»Ý      ^ûfå^ûfçAÖ&ý           :http://10.8.0.124/ necko:classified 1 strongly-framed 0 request-method GET response-head HTTP/1.1 200 OK
+Expires: 0
+Cache-Control: no-cache, private, must-revalidate
+Pragma: no-cache
+Content-Type: text/html
+X-XSS-Protection: 1; mode=block
+alternate-protocol: 443:quic,p=1
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+ original-response-headers Expires: 0
+Cache-Control: no-cache, private, must-revalidate
+Pragma: no-cache
+Content-Type: text/html
+X-XSS-Protection: 1; mode=block
+alternate-protocol: 443:quic,p=1
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Connection: close
+ ctid 1 uncompressed-len 0 net-response-time-onstart 163 net-response-time-onstop 186 predictor::resource-count 5 predictor::http://10.8.0.124/iss/image/login_css.css 1,1,1593534181,4097 predictor::http://10.8.0.124/jquery_211min.js 1,1,1593534181,4097 predictor::http://10.8.0.124/jsencrypt_min.js 1,1,1593534181,4097 predictor::http://10.8.0.124/iss/image/lightblue.jpg 1,1,1593534181,4097 predictor::http://10.8.0.124/iss/image/login_key.jpg 1,1,1593534181,4097    û
