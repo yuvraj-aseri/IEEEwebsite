@@ -1,12 +1,3 @@
-rm sidenav.html 
-rm newgallery.html 
-ls
-cp style.css ~/
-cp style2.css ~/
-rm style.css 
-rm style2.css 
-ls
-cp w3style.css ~/
 rm w3style.css 
 cp index.htmlold ~/
 ls
@@ -496,5 +487,14 @@ git pulll
 git pull
 git pull
 git pull
+git pull
+exit
+git pull
+git status
+git add .
+git pull
+git remote -v
+git sommit
+git commit
 git pull
 exit
