@@ -1,13 +1,3 @@
-rm w3style.css 
-cp index.htmlold ~/
-ls
-rm index.htmlold 
-ls
-cp -r css/ ~/
-ls
-rm -rf css/
-ls
-cp -r img/ ~/
 ls
 rm -r img/
 ls
@@ -498,3 +488,13 @@ git sommit
 git commit
 git pull
 exit
+git pull
+git pull
+git pull
+git push
+git add .
+git pull
+git commit
+git branch
+git commit -m "Add Upcoming event"
+git push
