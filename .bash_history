@@ -1,17 +1,3 @@
-ls
-rm -r img/
-ls
-cd >>
-cd ..
-ls
-cd ..
-ls
-rm -rf temp
-ls
-git pull
-git pull
-git status
-ls
 git pull
 ls
 git pull
@@ -498,3 +484,17 @@ git commit
 git branch
 git commit -m "Add Upcoming event"
 git push
+git pull
+git add .
+git status
+git commmit
+git commit
+git commit -m "Removed Conference Page"
+git push
+git add .
+git commit -m "Removed Conference Page"
+git pull
+git add .
+git commit -m "Removed Conference Page"
+git pull
+git pull
